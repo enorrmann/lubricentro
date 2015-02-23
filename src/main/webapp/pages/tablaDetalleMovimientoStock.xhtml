@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<h:form id="createDetalleForm" enctype="multipart/form-data">
+                <p:dataTable id="listDetalle" value="#{movimientostockBean.detalleMovimientoStockList}" var="detallemovimientostock" resizableColumns="false" paginator="false">
+                    <p:columns value="#{detallemovimientostockBean.columns}" var="column" columnIndexVar="colIndex">
+                        <f:facet name="header">
+                            <h:outputText value="#{applicationBean.getColumnName(column)}" />
+                        </f:facet>
+                        <h:outputText value="#{detallemovimientostock[column]}" />
+                    </p:columns>
+                    <p:column styleClass="action-column">
+                        <f:facet name="header">
+                            <h:outputText value="#{messages.label_actions}" />
+                        </f:facet>
+                        <p:commandButton id="editDetalleButton" icon="ui-icon-pencil" action="#{detallemovimientostockBean.onEdit}" update="editDetalleDialog" oncomplete="editDetalleDialog.show();viewDialog.hide();" title="#{messages.label_edit}">
+                            <f:setPropertyActionListener value="#{detallemovimientostock}" target="#{detallemovimientostockBean.detallemovimientostock}" />
+                        </p:commandButton>
+                        <p:tooltip for="editDetalleButton" value="#{messages.label_edit}" showEffect="fade" hideEffect="fade" />
+                        <p:commandButton id="deleteDetalleButton" icon="ui-icon-trash" oncomplete="viewDialog.hide();deleteDetalleDialog.show();" title="#{messages.label_delete}" >
+                            <f:setPropertyActionListener value="#{detallemovimientostock}" target="#{detallemovimientostockBean.detallemovimientostock}" />
+                        </p:commandButton>
+                        <p:tooltip for="deleteDetalleButton" value="#{messages.label_delete}" showEffect="fade" hideEffect="fade" />
+                    </p:column>
+                </p:dataTable>
+</h:form>
+        <p:dialog id="editDetalleDialog" header="#{messages.label_edit} Detallemovimientostock" modal="true" widgetVar="editDetalleDialog" dynamic="true" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+            <p:ajax event="close" update="data" listener="#{detallemovimientostockBean.handleDialogClose}" />
+            <h:form id="editDetalleForm" enctype="multipart/form-data">
+                <h:panelGrid id="editDetallePanelGrid" columns="3" binding="#{detallemovimientostockBean.editPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
+                <p:commandButton value="#{messages.label_save}" action="#{detallemovimientostockBean.persist}" update="editPanelGrid messages" />
+                <p:commandButton value="#{messages.label_close}" onclick="editDetalleDialog.hide()" type="button" />
+            </h:form>
+        </p:dialog>
+        <p:confirmDialog id="deleteDetalleDialog" widgetVar="deleteDetalleDialog" message="#{messages.label_delete_record}" showEffect="fade" hideEffect="explode" header="#{messages.label_confirm_deletion}" severity="alarm">
+            <h:form id="deleteDetalleForm">
+                <p:commandButton value="#{messages.label_yes}" action="#{detallemovimientostockBean.delete}" update="data" oncomplete="deleteDetalleDialog.hide()" />
+                <p:commandButton value="#{messages.label_no}" onclick="deleteDetalleDialog.hide()" type="button" />
+            </h:form>
+        </p:confirmDialog>
+
+</html>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="../templates/layout.xhtml">
+    <ui:define name="content">
+        <p:growl id="messages" showDetail="false" />
+
+<p:panel id="data">
+                <f:facet name="header">
+                    Detalles
+                </f:facet>
+
+<table width="100%">
+<tr>
+<td valign="top">
+        	    <p:panel toggleable="true" toggleSpeed="250">
+            	<f:facet name="header">Del Cliente</f:facet>
+                	<h:panelGrid columns="2" styleClass="dialog" columnClasses="col1,col2">
+                	<h:outputText value="Nombre:"/><h:outputText value="#{automotorBean.automotor.propietarioId.apellido}, #{automotorBean.automotor.propietarioId.nombres}"/>
+                	<h:outputText value="Domicilio:"/><h:outputText value="#{automotorBean.automotor.propietarioId.domicilio}"/>
+                	<h:outputText value="Teléfono:"/><h:outputText value="#{automotorBean.automotor.propietarioId.telefono}"/>
+                	<h:outputText value="C.U.I.T. :"/><h:outputText value="#{automotorBean.automotor.propietarioId.cuit}"/>
+                	<h:outputText value="e-mail:"/><h:outputText value="#{automotorBean.automotor.propietarioId.email}"/>
+                	</h:panelGrid>
+            	</p:panel>
+</td>
+<td valign="top">
+        	    <p:panel toggleable="true" toggleSpeed="250">
+            	<f:facet name="header">Del automotor</f:facet>
+                	<h:panelGrid id="viewPanelGrid" columns="2" binding="#{automotorBean.viewPanelGrid}" styleClass="dialog" columnClasses="col1,col2" />
+            	</p:panel>
+</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td valign="top">
+
+<h:form>
+<p:panel toggleable="true" toggleSpeed="250">
+            <f:facet name="header">Servicios</f:facet>
+            <h:outputText value="No se realizaron servicios" rendered="#{empty automotorBean.servicioList}"/>
+				<p:dataTable
+					selectionMode="single"
+					selection="#{itemServicioBean.servicio}"
+					rowKey="#{servicio.id}"
+					id="list"
+					value="#{automotorBean.servicioList}"
+					rendered="#{not empty automotorBean.servicioList}"
+					var="servicio"
+					rows="10"
+					paginator="true"
+					paginatorPosition="bottom"
+					resizableColumns="false">
+					<p:ajax event="rowSelect" update="frmItemServicio">
+					</p:ajax>
+				<p:column><f:facet name="header">Fecha</f:facet>
+                    <h:outputText value="#{servicio.fecha}">
+                      <f:convertDateTime pattern="dd/MM/yyyy" />
+                    </h:outputText>
+				</p:column>
+				<p:column><f:facet name="header">Servicio</f:facet>
+                    <h:outputText value="#{servicio.descripcion}">
+                    </h:outputText>
+                </p:column>
+				<p:column><f:facet name="header">Km</f:facet>
+                    <h:outputText value="#{servicio.kilometros}">
+                    </h:outputText>
+                </p:column>
+						<p:column styleClass="two-action-column">
+                        <p:commandButton id="editButton" icon="ui-icon-pencil" action="#{servicioBean.onEdit}" update="editServicioDialog" oncomplete="editServicioDialog.show()" title="#{messages.label_edit}">
+                            <f:setPropertyActionListener value="#{servicio}" target="#{servicioBean.servicio}" />
+                        </p:commandButton>
+                        <p:tooltip for="editButton" value="#{messages.label_edit}" showEffect="fade" hideEffect="fade" />
+                        <p:commandButton id="deleteButton" icon="ui-icon-trash" oncomplete="deleteServicioDialog.show()" title="#{messages.label_delete}" >
+                            <f:setPropertyActionListener value="#{servicio}" target="#{servicioBean.servicio}" />
+                        </p:commandButton>
+                        <p:tooltip for="deleteButton" value="#{messages.label_delete}" showEffect="fade" hideEffect="fade" />
+                    </p:column>
+                
+                </p:dataTable>
+                <p:commandButton id="servicioButton" icon="ui-icon-plus" action="#{servicioBean.displayCreateDialog}" value="Nuevo Servicio" ajax="false">
+                            <f:setPropertyActionListener value="#{automotorBean.automotor}" target="#{servicioBean.automotor}" />
+                        </p:commandButton>
+                </p:panel>
+                
+</h:form>
+</td>
+<td valign="top">
+                <h:form id="frmItemServicio">
+                            
+                <p:panel id="panelItemServicio" toggleable="true" toggleSpeed="250" rendered="false">
+                <f:facet name="header">Productos utilizados</f:facet>
+                <h:outputText value="Seleccione un servicio" rendered="#{empty itemServicioBean.servicio}"/>
+                <h:outputText value="No se utilizaron productos" rendered="#{empty itemServicioBean.itemServicioList and not empty itemServicioBean.servicio}"/>
+					<p:dataTable
+						id="itemServicioList"
+						value="#{itemServicioBean.itemServicioList}"
+						rendered="#{not empty itemServicioBean.itemServicioList}"
+						var="itemservicio"
+						resizableColumns="false"
+						paginator="true"
+						paginatorPosition="bottom"
+						rows="10">
+                    <p:column><f:facet name="header">Descripcion</f:facet>
+                    	#{itemservicio.itemId.codigo}<br/>#{itemservicio.itemId.categoriaId.categoria}<br/>#{itemservicio.itemId.marcaId.marca}<br/>#{itemservicio.itemId.descripcion}
+                    </p:column>
+
+                    <p:column styleClass="one-action-column">
+						<p:commandButton id="deleteButton" icon="ui-icon-trash" oncomplete="deleteItemServicioDialog.show()" title="#{messages.label_delete}" >
+                            <f:setPropertyActionListener value="#{itemservicio}" target="#{itemServicioBean.itemservicio}" />
+                        </p:commandButton>
+                        <p:tooltip for="deleteButton" value="#{messages.label_delete}" showEffect="fade" hideEffect="fade" />
+                    </p:column>
+                </p:dataTable>
+				<p:commandButton
+					rendered="#{not empty itemServicioBean.servicio}"
+					icon="ui-icon-plus" action="#{itemServicioBean.displayCreateDialog}" title="Agregar producto" ajax="false">
+				</p:commandButton>
+                </p:panel>
+				</h:form>
+				
+				</td>
+</tr>
+</table>
+				
+<h:form>
+                <p:commandButton value="#{messages.label_back}" ajax="false" action="automotor" />
+                </h:form>
+
+</p:panel>
+            <p:confirmDialog id="deleteServicioDialog" widgetVar="deleteServicioDialog" message="#{messages.label_delete_record}" showEffect="fade" hideEffect="explode" header="#{messages.label_confirm_deletion}" severity="alarm">
+            <h:form id="deleteForm">
+                <p:commandButton value="#{messages.label_yes}" action="#{servicioBean.delete}" update="data" oncomplete="deleteServicioDialog.hide()" />
+                <p:commandButton value="#{messages.label_no}" onclick="deleteServicioDialog.hide()" type="button" />
+            </h:form>
+        </p:confirmDialog>
+            <p:dialog id="createServicioDialog" header="#{messages.label_create} Servicio" modal="true" widgetVar="createServicioDialog" dynamic="true" visible="#{servicioBean.createDialogVisible}" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+            <p:ajax event="close" update="data" listener="#{servicioBean.handleDialogClose}" />
+            <h:form id="createServicioForm" enctype="multipart/form-data">
+                <h:panelGrid id="createServicioPanelGrid" columns="3" binding="#{servicioBean.createPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
+                <p:commandButton value="#{messages.label_save}" action="#{servicioBean.persist}" update="createServicioPanelGrid messages" />
+                <p:commandButton value="#{messages.label_close}" onclick="createServicioDialog.hide()" type="button" />
+            </h:form>
+        </p:dialog>
+        <p:dialog id="createItemServicioDialog" header="Agregar Producto" modal="true" widgetVar="createItemServicioDialog" dynamic="true" visible="#{itemServicioBean.createDialogVisible}" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+            <p:ajax event="close" update="data" listener="#{itemServicioBean.handleDialogClose}" />
+            <h:form id="createForm" enctype="multipart/form-data">
+                <h:panelGrid id="createPanelGrid" columns="3" binding="#{itemServicioBean.createPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
+                <p:commandButton value="#{messages.label_save}" action="#{itemServicioBean.persist}" update="createPanelGrid messages" />
+                <p:commandButton value="#{messages.label_close}" onclick="createItemServicioDialog.hide()" type="button" />
+            </h:form>
+        </p:dialog>
+        <p:confirmDialog id="deleteItemServicioDialog" widgetVar="deleteItemServicioDialog" message="#{messages.label_delete_record}" showEffect="fade" hideEffect="explode" header="#{messages.label_confirm_deletion}" severity="alarm">
+            <h:form>
+                <p:commandButton value="#{messages.label_yes}" action="#{itemServicioBean.delete}" update="data" oncomplete="deleteItemServicioDialog.hide()" />
+                <p:commandButton value="#{messages.label_no}" onclick="deleteItemServicioDialog.hide()" type="button" />
+            </h:form>
+        </p:confirmDialog>
+        <p:dialog id="editServicioDialog" header="#{messages.label_edit} Servicio" modal="true" widgetVar="editServicioDialog" dynamic="true" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+            <p:ajax event="close" update="data" listener="#{servicioBean.handleDialogClose}" />
+            <h:form id="editForm" enctype="multipart/form-data">
+                <h:panelGrid id="editPanelGrid" columns="3" binding="#{servicioBean.editPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
+                <p:commandButton value="#{messages.label_save}" action="#{servicioBean.persist}" update="editPanelGrid messages" />
+                <p:commandButton value="#{messages.label_close}" onclick="editServicioDialog.hide()" type="button" />
+            </h:form>
+        </p:dialog>
+
+    </ui:define>
+</ui:composition>
+</html>

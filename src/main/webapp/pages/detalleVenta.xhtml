@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="../templates/layout.xhtml">
+  <ui:define name="content">
+    <h:form prependId="false" id="growlForm">
+      <p:growl id="growl" showDetail="false" />
+    </h:form>
+
+    
+    <h:form prependId="false" id="dataForm">
+           <p:remoteCommand name="increment" actionListener="#{detalleVentaBean.addToDetalleList}" update="list" process="itCodigo"/>
+    
+      <p:panel id="data" toggleable="true" toggleSpeed="250">
+        <f:facet name="header">
+          Detalles de la venta
+        </f:facet>
+
+    <h:panelGrid columns="2" styleClass="dialog" columnClasses="col1,col2">
+	     	<h:outputText value="Fecha: "/><h:outputText value="#{ventaBean.venta.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText>
+	     	<h:outputText value="Cliente: "/><h:outputText value="#{ventaBean.venta.cliente.apellido}, #{ventaBean.venta.cliente.nombres}"/>
+	     	<h:outputText value="Forma de pago: "/><h:outputText value="#{ventaBean.venta.formaDePago}"/>
+	     	
+	     	Codigo:
+	          	<p:inputText id="itCodigo" value="#{detalleVentaBean.codigoProducto}" onkeypress="return customfunction(event);"/>
+				<p:commandButton rendered="false" id="addDetalleButton" icon="ui-icon-search" action="#{detalleVentaBean.displayCreateDialog}" title="Buscar producto" ajax="false"/>
+     		Referencia:
+			<p:autoComplete
+				id="acReferencia"
+				maxResults="10"
+				minQueryLength="2"
+				queryDelay="1000"
+				completeMethod="#{compraBean.completeCodigoReferenciaProducto}" var="item" itemLabel="#{item.nombreLargo}" itemValue="#{item}" converter="#{compraBean.itemConverter}">
+				<p:ajax event="itemSelect" listener="#{detalleVentaBean.addToDetalleListFromReferencia}" update="list,acReferencia" />
+			</p:autoComplete>
+			<p:message for="acReferencia" display="icon" />
+     	</h:panelGrid>
+
+        
+        <p:dataTable
+			id="list"
+			value="#{detalleVentaBean.allDetalleVentas}"
+			var="detalleVenta"
+			resizableColumns="false"
+			paginator="false"
+			emptyMessage="#{messages.label_empty_datatable}">
+		<p:column><f:facet name="header">Producto</f:facet>
+			#{detalleVenta.item}
+		</p:column>
+		<p:column><f:facet name="header">Cantidad</f:facet>
+			#{detalleVenta.cantidad}
+		</p:column>
+		<p:column><f:facet name="header">Precio Unitario</f:facet>
+			#{detalleVenta.precioUnitario}
+		</p:column>
+		<p:column><f:facet name="header">Total</f:facet>
+			#{detalleVenta.precioTotal}
+			<f:facet name="footer">
+	 			<h:outputText value="#{ventaBean.venta.precioTotal}"/>
+			</f:facet>
+			
+		</p:column>
+          <p:column styleClass="action-column">
+            <f:facet name="header">
+              <h:outputText value="Acciones" />
+            </f:facet>
+            <p:commandButton id="editButton" icon="ui-icon-pencil" update=":editForm:editPanelGrid" action="#{detalleVentaBean.onEdit}" oncomplete="editDialog.show()" title="#{messages.label_edit}">
+              <f:setPropertyActionListener value="#{detalleVenta}" target="#{detalleVentaBean.detalleVenta}" />
+            </p:commandButton>
+            <p:tooltip for="editButton" value="#{messages.label_edit}" showEffect="fade" hideEffect="fade" />
+            <p:commandButton id="deleteButton" icon="ui-icon-trash" oncomplete="deleteDialog.show()" title="#{messages.label_delete}">
+              <f:setPropertyActionListener value="#{detalleVenta}" target="#{detalleVentaBean.detalleVenta}" />
+            </p:commandButton>
+            <p:tooltip for="deleteButton" value="#{messages.label_delete}" showEffect="fade" hideEffect="fade" />
+          </p:column>
+        </p:dataTable>
+      </p:panel>
+      
+                <script type="text/javascript">
+				 function customfunction(e) {
+					 if (e.keyCode==13){
+						 increment();	 
+						 var input = document.getElementById("itCodigo");
+							input.value= "";
+						    input.focus();
+						 return false;
+					 }
+					 return true;
+			 	 	 
+				 }
+			</script>
+      
+    </h:form>
+    
+    <p:dialog id="createDialog" header="#{messages.label_create} Detalle" modal="true" widgetVar="createDialog" dynamic="true" visible="#{detalleVentaBean.createDialogVisible}" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+      <p:ajax event="close" update=":dataForm:data" listener="#{detalleVentaBean.handleDialogClose}" />
+      <p:outputPanel id="createPanel">
+        <h:form id="createDetalleVentaForm">
+        Item:
+        <p:autoComplete
+			id="itemCreateInput"
+			value="#{detalleVentaBean.detalleVenta.item}"
+			completeMethod="#{detalleVentaBean.completeItem}"
+			var="item"
+			dropdown="true"
+			itemLabel="#{item.codigo} #{item.descripcion}"
+			itemValue="#{item}"
+			converter="#{detalleVentaBean.itemConverter}">
+			<p:ajax event="itemSelect" listener="#{detalleVentaBean.itemSelected}" update="createPanelGrid"/>
+
+		</p:autoComplete>  
+          <h:panelGrid id="createPanelGrid" columns="3" binding="#{detalleVentaBean.createPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
+          <p:commandButton id="createSaveButton" value="#{messages.label_save}" action="#{detalleVentaBean.persist}" update="createPanelGrid :growlForm:growl" />
+          <p:commandButton id="createCloseButton" value="#{messages.label_close}" onclick="createDialog.hide()" type="button" />
+        </h:form>
+      </p:outputPanel>
+    </p:dialog>
+    <p:dialog id="editDialog" header="#{messages.label_edit} Detalle" modal="true" widgetVar="editDialog" dynamic="true" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+      <p:ajax event="close" update=":dataForm:data" listener="#{detalleVentaBean.handleDialogClose}" />
+      <p:outputPanel id="editPanel">
+        <h:form id="editForm">
+          <h:panelGrid id="editPanelGrid" columns="3" binding="#{detalleVentaBean.editPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
+          <p:commandButton id="editSaveButton" value="#{messages.label_save}" action="#{detalleVentaBean.persist}" update="editPanelGrid :growlForm:growl" />
+          <p:commandButton id="editCloseButton" value="#{messages.label_close}" onclick="editDialog.hide()" type="button" />
+        </h:form>
+      </p:outputPanel>
+    </p:dialog>
+    <p:dialog id="viewDialog" header="#{messages.label_view} Detalle" modal="true" widgetVar="viewDialog" dynamic="true" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+      <p:outputPanel id="viewPanel">
+        <h:form id="viewForm">
+          <h:panelGrid id="viewPanelGrid" columns="2" binding="#{detalleVentaBean.viewPanelGrid}" styleClass="dialog" columnClasses="col1,col2" />
+          <p:commandButton id="viewCloseButton" value="#{messages.label_close}" onclick="viewDialog.hide()" type="button" />
+        </h:form>
+      </p:outputPanel>
+    </p:dialog>
+    <p:confirmDialog id="deleteDialog" widgetVar="deleteDialog" message="#{messages.label_delete_record}" showEffect="fade" hideEffect="explode" header="#{messages.label_confirm_deletion}" severity="alarm">
+      <p:outputPanel id="deletePanel">
+        <h:form id="deleteForm">
+          <p:commandButton id="deleteYesButton" value="#{messages.label_yes}" action="#{detalleVentaBean.delete}" update=":dataForm:data :growlForm:growl" oncomplete="deleteDialog.hide()" />
+          <p:commandButton id="deleteNoButton" value="#{messages.label_no}" onclick="deleteDialog.hide()" type="button" />
+        </h:form>
+      </p:outputPanel>
+    </p:confirmDialog>
+  </ui:define>
+</ui:composition>
+</html>

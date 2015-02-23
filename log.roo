@@ -1,0 +1,311 @@
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 09:24:39
+project --topLevelPackage ar.com.norrmann.coqui --projectName LubricentroJsf --java 6
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 09:24:42
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 09:24:49
+persistence setup --database MYSQL --provider HIBERNATE --databaseName metal --userName root --password root
+web jsf setup --implementation ORACLE_MOJARRA --library PRIMEFACES --theme UI_LIGHTNESS 
+web jsf all --package ~.jsf
+web jsf all --package ~.jsf
+web jsf setup --implementation ORACLE_MOJARRA --library PRIMEFACES --theme UI_LIGHTNESS 
+web jsf all --package ~.jsf
+web jsf all --package ~.jsf
+database reverse engineer --schema no-schema-required --package ~.model
+web jsf all --package ~.jsf
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 09:29:39
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 09:31:09
+web jsf setup --implementation ORACLE_MOJARRA --library PRIMEFACES --theme UI_LIGHTNESS 
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 09:37:40
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 09:37:48
+web jsf setup --implementation ORACLE_MOJARRA --library PRIMEFACES --theme BLACK_TIE 
+web jsf setup --implementation ORACLE_MOJARRA --library PRIMEFACES --theme UI_LIGHTNESS
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 11:48:57
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 11:49:16
+finder list --class ~.model.Detallemovimientostock
+finder add --finderName findDetallemovimientostocksByMovimientoStockId
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 14:44:23
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 14:47:04
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 14:54:34
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 16:54:07
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 17:01:51
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-11 17:02:06
+// [failed] database introspect --schema no-schema-required
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id --searchResultId 01
+database introspect --schema no-schema-required
+// [failed] database reverse engineer --schema no-schema-required --includeTables "movimientostock"
+database reverse engineer --schema no-schema-required 
+web jsf all --package ar.com.norrmann.coqui.jsf
+database reverse engineer --schema no-schema-required 
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-11 21:59:19
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-12 09:32:04
+perform clean
+database reverse engineer --schema no-schema-required --package ~.model
+web jsf all --package ~.jsf
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-12 10:43:31
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-12 10:44:06
+database reverse engineer --schema no-schema-required --package ~.model
+finder list --class ~.model.Item
+finder add --finderName findItemsByTipoItemId
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-12 13:26:18
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-12 13:28:11
+finder list --class ~.model.Marca
+finder add --finderName findMarcasByTipoItemId
+finder list --class ~.model.Categoria
+finder add --finderName findCategoriasByTipoItemId
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-12 14:49:19
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-13 09:39:07
+pgp automatic trust
+addon install bundle --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-13 10:00:27
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-13 10:13:19
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-13 10:36:00
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-13 10:36:10
+finder list ---class ~.model.Item
+finder add --finderName findItemsByCategoriaId
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-13 12:45:40
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-13 12:50:53
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-13 13:53:15
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-14 14:03:13
+persistence setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE 
+web jsf setup 
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-14 14:19:44
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-14 14:59:26
+persistence setup --database MYSQL --provider HIBERNATE --databaseName metal --userName root --password root
+database reverse engineer --schema no-schema-required 
+database reverse engineer --schema no-schema-required 
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-14 17:47:52
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-14 17:48:01
+web jsf setup --theme BLITZER 
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-14 20:15:24
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-15 14:07:29
+database reverse engineer --schema no-schema-required 
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-15 15:51:23
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-15 15:51:36
+finder list --class ~.model.Movimientoitem
+finder add --finderName findMovimientoitemsByItemId
+database reverse engineer --schema no-schema-required 
+database reverse engineer --schema no-schema-required 
+database reverse engineer --schema no-schema-required 
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-16 01:05:03
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-16 13:06:29
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-16 14:37:38
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-16 18:24:57
+finder list --class ~.model.Modelo
+finder add --finderName findModeloesByMarcaId
+quit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-16 18:34:48
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-16 18:34:59
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-16 18:46:47
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-16 22:15:30
+database reverse engineer --schema no-schema-required 
+web jsf all --package ar.com.norrmann.coqui.jsf
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-16 22:42:57
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-17 08:43:34
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-17 12:17:31
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-17 12:55:23
+finder list --class ~.model.Servicio
+finder add --finderName findServiciosByAutomotorId
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-17 14:55:45
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-17 17:05:21
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-17 19:06:02
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-18 08:32:50
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-18 10:08:49
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-18 18:27:37
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-18 19:04:35
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-19 10:05:38
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY --jndiDataSource jdbc/basic
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-19 10:53:27
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-19 18:45:49
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-19 20:19:38
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-19 20:53:52
+persistence setup --database HYPERSONIC_PERSISTENT --provider HIBERNATE --jndiDataSource jdbc/basic
+persistence setup --database MYSQL --provider HIBERNATE --databaseName metal --userName root --password root
+persistence setup --database HYPERSONIC_PERSISTENT --provider HIBERNATE --jndiDataSource jdbc/basic
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-19 21:01:29
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-21 14:51:35
+persistence setup --database MYSQL --provider HIBERNATE --databaseName metal --userName root --password root
+database reverse engineer --schema no-schema-required 
+database reverse engineer --schema no-schema-required 
+finder list --class ~.model.Itemservicio
+finder add --finderName findItemserviciosByServicioId
+web jsf scaffold --class ~.jsf.ItemServicioBean --entity ~.model.Itemservicio
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-21 16:47:30
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-21 16:48:37
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-21 18:00:45
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-01-22 13:42:27
+database reverse engineer --schema no-schema-required 
+database reverse engineer --schema no-schema-required 
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-01-22 17:37:07
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-26 16:28:02
+hint
+hint finders
+hint
+hint finders
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-26 16:51:06
+// [failed] finder list --class Item
+finder list --class ar.com.norrmann.coqui.model.Item
+finder add --finderName findItemsByTipoItemId
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-29 16:46:25
+hint
+hint entities
+entity jpa --class ~.model.Compra
+field date --fieldName fechaCompra --type java.util.Date 
+entity jpa --class ~.model.DetalleCompra 
+field reference --fieldName compra --type ~.model.Compra --notNull 
+focus --class ~.model.Compra
+field set --fieldName detalleList --type ~.model.DetalleCompra 
+focus --class ~.model.DetalleCompra
+field number --fieldName precioUnitario --type java.math.BigDecimal
+field reference --fieldName item --type ~.model.Item --notNull 
+field number --fieldName cantidad --type int --notNull 
+field reference --fieldName movimientoIngresoStock --type ~.model.Movimientoitem
+focus --class ~.model.Compra
+field reference --fieldName proveedor --type ~.model.Proveedor
+web jsf scaffold --class ~.model.Compra
+web jsf scaffold --class ~.model.Compra
+web jsf scaffold --class ~.jsf.CompraBean --entity ~.model.Compra --includeOnMenu true
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-02-29 18:09:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-29 18:09:36
+web jsf scaffold --class ~.jsf.DetalleCompraBean --entity ~.model.DetalleCompra
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-02-29 21:36:17
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-04 16:57:33
+finder list --class ~.model.DetalleCompra
+finder add --finderName findDetalleComprasByCompra
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-04 21:23:04
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-05 22:37:38
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-05 23:00:10
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-07 18:38:25
+hint
+help
+hint
+hint security
+help security
+hint
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-07 23:42:48
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-08 19:33:18
+finder list --class ~.model.Item --depth 2
+finder list --class ~.model.Item 
+finder add --finderName findItemsByCodigoLike
+finder add --finderName findItemsByCodigoLikeOrDescripcionLikeAndTipoItemIdEquals
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-08 20:31:38
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-08 20:32:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-08 20:58:45
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-08 21:15:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-08 21:45:55
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-12 19:18:27
+entity jpa --class ~.model.Venta
+field reference --fieldName cliente --type ~.model.Cliente
+field date --fieldName fecha --type java.util.Date 
+entity jpa --class ~.model.DetalleVenta 
+field reference --fieldName Venta --type ~.model.Venta --notNull 
+focus --class ~.model.Venta
+field set --fieldName detalleList --type ~.model.DetalleVenta 
+focus --class ~.model.DetalleVenta
+field number --fieldName precioUnitario --type java.math.BigDecimal
+field reference --fieldName item --type ~.model.Item --notNull 
+field number --fieldName cantidad --type int --notNull 
+field reference --fieldName movimientoEgresoStock --type ~.model.Movimientoitem
+web jsf scaffold --class ~.jsf.VentaBean --entity ~.model.Venta
+web jsf scaffold --class ~.jsf.DetalleVentaBean --entity ~.model.DetalleVenta
+finder list --class ~.model.Movimientoitem
+finder list --class ~.model.Movimientoitem --depth 2
+finder list --class ~.model.Movimientoitem --depth 2 --filter tipo
+finder list --class ~.model.Movimientoitem --depth 3 --filter tipoitem
+finder list --class ~.model.Movimientoitem --depth 3 --filter tipoItem
+// [failed] finder list --class ~.model.Movimientoitem --depth 4 --filter tipoItem
+finder list --class ~.model.Movimientoitem --depth 3 --filter itemId
+finder list --class ~.model.Movimientoitem  --filter itemId
+finder add --finderName findMovimientoitemsByItemId
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-13 16:20:11
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-13 16:20:22
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-13 18:19:41
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-19 12:23:42
+finder list --class ~.model.Item
+finder add --finderName findItemsByTipoItemId
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-20 15:41:54
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-20 15:54:44
+finder list --class ~.model.Item
+finder add --finderName findItemsByCodigoEquals
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-21 00:23:05
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-21 13:08:46
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-21 14:35:00
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-21 14:49:26
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-21 14:54:13
+// [failed] finder list --class ~.model.DetalleVenta
+finder list --class ~.model.DetalleVenta
+finder add --finderName findDetalleVentasByVenta
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-22 13:54:52
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-22 13:56:04
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-23 16:14:12
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-23 16:17:06
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-25 23:20:34
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-26 16:54:13
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-27 00:42:39
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-29 23:04:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-29 23:15:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-29 23:18:32
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-29 23:24:05
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-31 11:33:18
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-31 12:34:49
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-31 13:17:09
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-01 18:18:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-04 00:10:54
+focus --class ~.model.Item
+field string --fieldName codigoReferencia
+finder list --class ~.model.Item
+finder add --finderName findItemsByCodigoReferenciaLike
+focus --class ~.model.Item
+field string --fieldName codigo 
+field string --fieldName descripcion
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-04 03:20:28
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-04 13:08:20
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-04 16:25:10
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-04 16:25:58
+focus --class ~.model.Venta
+// [failed] enum constant --name CONTADO --class ~.model.FormaDePago
+enum type --class ~.model.FormaDePago
+enum constant --name Contado
+enum constant --name CuentaCorriente
+focus --class ~.model.Venta 
+field enum --fieldName formaDePago --type ~.model.FormaDePago
+// [failed] field enum --fieldName formaDePago --type ~.model.FormaDePago --notNull
+entity jpa --class ~.model.ClienteDebe
+field date --fieldName fecha --type java.util.Date
+field reference --fieldName cliente --type ~.model.Cliente --notNull 
+field reference --fieldName venta --type ~.model.Venta
+field reference --fieldName servicio --type ~.model.Servicio
+field number --fieldName debe --type java.math.BigDecimal --notNull
+field string --fieldName observaciones
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-04 17:47:45
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-04 17:53:58
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-05 13:58:07
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-04-05 15:32:16
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-04-06 19:27:06
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-23 09:57:41
+hint
+help
+perform package
+perform clean
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-05-23 10:27:40
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-23 10:28:05
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-05-23 10:33:27
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-23 10:34:06
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-05-23 10:36:31
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-23 10:46:27
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-23 19:07:55
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2015-02-23 11:31:34
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2015-02-23 11:45:20

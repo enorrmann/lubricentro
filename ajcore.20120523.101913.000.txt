@@ -1,0 +1,873 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.12.M2 built on Thursday Aug 18, 2011 at 19:59:45 GMT
+---- Dump Properties ---
+Dump file: ajcore.20120523.101913.000.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Archivos de programa\Java\jdk1.6.0_16\jre\bin
+java.vm.version=14.2-b01
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+sun.java.launcher=SUN_STANDARD
+user.country=AR
+sun.os.patch.level=Service Pack 3
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf
+java.runtime.version=1.6.0_16-b01
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\endorsed
+os.arch=x86
+java.io.tmpdir=C:\DOCUME~1\ENORRM~1\CONFIG~1\Temp\
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+user.variant=
+os.name=Windows XP
+classworlds.conf=D:\apache-maven-2.2.1\bin\m2.conf
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Archivos de programa\Java\jdk1.6.0_16\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Archivos de programa\Java\jre1.6.0_07\lib;C:\Archivos de programa\Java\jre1.6.0_07\bin;C:\Archivos de programa\Java\jre1.6.0_07C:\oracle\product\11.1.0\client_1\bin;C:\oracle\oraClient9i\bin;C:\oracle\orant\bin;C:\oracle\oraDev9i\bin;C:\oracle\oraDev9i\jdk\jre\bin;C:\oracle\oraDev9i\jdk\jre\bin\classic;C:\oracle\oraDev9i\jdk\jre\bin\classic;C:\oracle\oraDev9i\jlib;C:\oracle\oraDev9i\bin;C:\Archivos de programa\Oracle\jre\1.3.1\bin;C:\Archivos de programa\Oracle\jre\1.1.8\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Archivos de programa\Archivos comunes\Roxio Shared\9.0\DLLShared\;C:\oracle\orant\jdk\bin;C:\Archivos de programa\Java\jre1.6.0_07\lib;C:\MinGW\bin;C:\Archivos de programa\QuickTime\QTSystem\;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Archivos de programa\Common Files\GTK\2.0\bin;D:\apache-maven-2.2.1\bin;D:\spring-roo-1.2.0.RELEASE\bin;C:\Archivos de programa\Gtk+\bin
+java.specification.name=Java Platform API Specification
+java.class.version=50.0
+sun.management.compiler=HotSpot Client Compiler
+os.version=5.1
+user.home=C:\Documents and Settings\enorrmann
+user.timezone=GMT-03:00
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.6
+java.class.path=D:\apache-maven-2.2.1\boot\classworlds-1.1.jar
+user.name=enorrmann
+java.vm.specification.version=1.0
+java.home=C:\Archivos de programa\Java\jdk1.6.0_16\jre
+sun.arch.data.model=32
+user.language=es
+java.specification.vendor=Sun Microsystems Inc.
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode, sharing
+java.version=1.6.0_16
+java.ext.dirs=C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\resources.jar;C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\rt.jar;C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\sunrsasign.jar;C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\jsse.jar;C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\jce.jar;C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\charsets.jar;C:\Archivos de programa\Java\jdk1.6.0_16\jre\classes
+java.vendor=Sun Microsystems Inc.
+maven.home=D:\apache-maven-2.2.1
+file.separator=\
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+---- Command Line ---
+-encoding
+UTF-8
+-outxml
+-source
+6
+-target
+6
+-classpath
+C:\Documents and Settings\enorrmann\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Documents and Settings\enorrmann\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Documents and Settings\enorrmann\.m2\repository\cglib\cglib-nodep\2.2.2\cglib-nodep-2.2.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\com\sun\faces\jsf-api\2.1.2\jsf-api-2.1.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\com\sun\faces\jsf-impl\2.1.2\jsf-impl-2.1.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar;C:\Documents and Settings\enorrmann\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar;C:\Documents and Settings\enorrmann\.m2\repository\commons-dbcp\commons-dbcp\1.3\commons-dbcp-1.3.jar;C:\Documents and Settings\enorrmann\.m2\repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\commons-io\commons-io\2.1\commons-io-2.1.jar;C:\Documents and Settings\enorrmann\.m2\repository\commons-pool\commons-pool\1.5.6\commons-pool-1.5.6.jar;C:\Documents and Settings\enorrmann\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Documents and Settings\enorrmann\.m2\repository\javassist\javassist\3.12.0.GA\javassist-3.12.0.GA.jar;C:\Documents and Settings\enorrmann\.m2\repository\javax\el\el-api\2.2\el-api-2.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Documents and Settings\enorrmann\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Documents and Settings\enorrmann\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;C:\Documents and Settings\enorrmann\.m2\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\Documents and Settings\enorrmann\.m2\repository\mysql\mysql-connector-java\5.1.18\mysql-connector-java-5.1.18.jar;C:\Documents and Settings\enorrmann\.m2\repository\net\sf\flexjson\flexjson\2.1\flexjson-2.1.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\apache\commons\commons-lang3\3.0.1\commons-lang3-3.0.1.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\aspectj\aspectjrt\1.6.12.M2\aspectjrt-1.6.12.M2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\aspectj\aspectjweaver\1.6.12.M2\aspectjweaver-1.6.12.M2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-commons-annotations\3.2.0.Final\hibernate-commons-annotations-3.2.0.Final.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-core\3.6.8.Final\hibernate-core-3.6.8.Final.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-entitymanager\3.6.8.Final\hibernate-entitymanager-3.6.8.Final.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-validator\4.2.0.Final\hibernate-validator-4.2.0.Final.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\primefaces\3.0.RC2-SNAPSHOT\primefaces-3.0.RC2-SNAPSHOT.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\black-tie\1.0.2\black-tie-1.0.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\blitzer\1.0.2\blitzer-1.0.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\south-street\1.0.2\south-street-1.0.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\ui-lightness\1.0.2\ui-lightness-1.0.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\slf4j\jcl-over-slf4j\1.6.2\jcl-over-slf4j-1.6.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\slf4j\slf4j-api\1.6.2\slf4j-api-1.6.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\slf4j\slf4j-log4j12\1.6.2\slf4j-log4j12-1.6.2.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aop\3.1.0.RELEASE\spring-aop-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-asm\3.1.0.RELEASE\spring-asm-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aspects\3.1.0.RELEASE\spring-aspects-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-beans\3.1.0.RELEASE\spring-beans-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-context\3.1.0.RELEASE\spring-context-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-context-support\3.1.0.RELEASE\spring-context-support-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-core\3.1.0.RELEASE\spring-core-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-expression\3.1.0.RELEASE\spring-expression-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-jdbc\3.1.0.RELEASE\spring-jdbc-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-orm\3.1.0.RELEASE\spring-orm-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-tx\3.1.0.RELEASE\spring-tx-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-web\3.1.0.RELEASE\spring-web-3.1.0.RELEASE.jar;C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\roo\org.springframework.roo.annotations\1.2.1.RELEASE\org.springframework.roo.annotations-1.2.1.RELEASE.jar;C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\target\classes
+-aspectpath
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aspects\3.1.0.RELEASE\spring-aspects-3.1.0.RELEASE.jar
+-d
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\target\classes
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\MensajeUtil.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\ViewExpiredExceptionExceptionHandlerFactory.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean_Roo_ApplicationBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Finder.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_JavaBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_JavaBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Finder.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Finder.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\ViewExpiredExceptionExceptionHandler.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Finder.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_JavaBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_JavaBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\LocaleBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_Serializable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_JavaBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_Serializable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_Serializable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\FormaDePago.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_JavaBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_JavaBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Finder.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_ToString.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_Serializable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_DbManaged.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter_Roo_Converter.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Jpa_Entity.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter_Roo_Configurable.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean.java
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Jpa_ActiveRecord.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean_Roo_ManagedBean.aj
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter_Roo_Configurable.aj
+---- Full Classpath ---
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\resources.jar(1115985 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\rt.jar(49396545 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\sunrsasign.jar(missing)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\jsse.jar(618950 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\jce.jar(88256 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\charsets.jar(6803799 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\classes(missing)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aspects\3.1.0.RELEASE\spring-aspects-3.1.0.RELEASE.jar(50621 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\ext\dnsns.jar(8239 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\ext\localedata.jar(841667 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\ext\sunjce_provider.jar(170239 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\ext\sunmscapi.jar(31893 bytes)
+C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\ext\sunpkcs11.jar(231542 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar(443432 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar(4467 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\cglib\cglib-nodep\2.2.2\cglib-nodep-2.2.2.jar(326917 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\com\sun\faces\jsf-api\2.1.2\jsf-api-2.1.2.jar(626168 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\com\sun\faces\jsf-impl\2.1.2\jsf-impl-2.1.2.jar(1934885 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar(232771 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar(559366 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\commons-dbcp\commons-dbcp\1.3\commons-dbcp-1.3.jar(148817 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar(59590 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\commons-io\commons-io\2.1\commons-io-2.1.jar(163151 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\commons-pool\commons-pool\1.5.6\commons-pool-1.5.6.jar(100472 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar(313898 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\javassist\javassist\3.12.0.GA\javassist-3.12.0.GA.jar(633312 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\javax\el\el-api\2.2\el-api-2.2.jar(33936 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar(414240 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar(105112 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar(15071 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar(47433 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar(481535 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\mysql\mysql-connector-java\5.1.18\mysql-connector-java-5.1.18.jar(789885 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\net\sf\flexjson\flexjson\2.1\flexjson-2.1.jar(81151 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\apache\commons\commons-lang3\3.0.1\commons-lang3-3.0.1.jar(312866 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\aspectj\aspectjrt\1.6.12.M2\aspectjrt-1.6.12.M2.jar(116222 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\aspectj\aspectjweaver\1.6.12.M2\aspectjweaver-1.6.12.M2.jar(1694477 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-commons-annotations\3.2.0.Final\hibernate-commons-annotations-3.2.0.Final.jar(71283 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-core\3.6.8.Final\hibernate-core-3.6.8.Final.jar(3119425 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-entitymanager\3.6.8.Final\hibernate-entitymanager-3.6.8.Final.jar(426283 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\hibernate-validator\4.2.0.Final\hibernate-validator-4.2.0.Final.jar(366592 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar(102661 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\primefaces\3.0.RC2-SNAPSHOT\primefaces-3.0.RC2-SNAPSHOT.jar(1642522 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\black-tie\1.0.2\black-tie-1.0.2.jar(37006 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\blitzer\1.0.2\blitzer-1.0.2.jar(21591 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\south-street\1.0.2\south-street-1.0.2.jar(36856 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\primefaces\themes\ui-lightness\1.0.2\ui-lightness-1.0.2.jar(34299 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\slf4j\jcl-over-slf4j\1.6.2\jcl-over-slf4j-1.6.2.jar(17310 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\slf4j\slf4j-api\1.6.2\slf4j-api-1.6.2.jar(25689 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\slf4j\slf4j-log4j12\1.6.2\slf4j-log4j12-1.6.2.jar(9752 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aop\3.1.0.RELEASE\spring-aop-3.1.0.RELEASE.jar(331474 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-asm\3.1.0.RELEASE\spring-asm-3.1.0.RELEASE.jar(53079 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aspects\3.1.0.RELEASE\spring-aspects-3.1.0.RELEASE.jar(50621 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-beans\3.1.0.RELEASE\spring-beans-3.1.0.RELEASE.jar(589253 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-context\3.1.0.RELEASE\spring-context-3.1.0.RELEASE.jar(829601 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-context-support\3.1.0.RELEASE\spring-context-support-3.1.0.RELEASE.jar(106819 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-core\3.1.0.RELEASE\spring-core-3.1.0.RELEASE.jar(442400 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-expression\3.1.0.RELEASE\spring-expression-3.1.0.RELEASE.jar(176283 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-jdbc\3.1.0.RELEASE\spring-jdbc-3.1.0.RELEASE.jar(401762 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-orm\3.1.0.RELEASE\spring-orm-3.1.0.RELEASE.jar(378235 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-tx\3.1.0.RELEASE\spring-tx-3.1.0.RELEASE.jar(246036 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-web\3.1.0.RELEASE\spring-web-3.1.0.RELEASE.jar(540819 bytes)
+C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\roo\org.springframework.roo.annotations\1.2.1.RELEASE\org.springframework.roo.annotations-1.2.1.RELEASE.jar(29665 bytes)
+C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\target\classes(2 entries)
+---- Compiler Messages ---
+warning bad version number found in C:\Documents and Settings\enorrmann\.m2\repository\org\aspectj\aspectjrt\1.6.12.M2\aspectjrt-1.6.12.M2.jar expected 1.6.12.M2 found 1.6.11.M2
+info directory classpath entry does not exist: C:\Archivos de programa\Java\jdk1.6.0_16\jre\lib\sunrsasign.jar
+info zipfile classpath entry does not exist: C:\Archivos de programa\Java\jdk1.6.0_16\jre\classes
+info Pipelining compilation
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean_Roo_ApplicationBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Finder.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_JavaBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_JavaBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Finder.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Finder.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Finder.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_JavaBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_JavaBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_Serializable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_JavaBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_Serializable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_Serializable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_JavaBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_JavaBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Finder.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_ToString.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_Serializable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_DbManaged.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter_Roo_Converter.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Jpa_Entity.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter_Roo_Configurable.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Jpa_ActiveRecord.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean_Roo_ManagedBean.aj
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter_Roo_Configurable.aj
+info weaver operating in reweavable mode.  Need to verify any required types exist.
+info woven aspect ar.com.norrmann.coqui.jsf.converter.TipoitemConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Marca_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ProveedorBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.Automotor_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleCompra_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipoitem_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Categoria_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ItemBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.ClienteDebe_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Proveedor_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.MarcaBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.DetalleCompraBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.Item_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.MovimientoitemBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Itemservicio_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.MovimientoitemConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.CategoriaConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Cliente_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.TipomovimientoConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Compra_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Servicio_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Itemservicio_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Categoria_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.model.Proveedor_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ApplicationBean_Roo_ApplicationBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean_Roo_ApplicationBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.TipoitemConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Venta_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipomovimiento_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Cliente_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.DetalleVentaConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Itemservicio_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Compra_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ClienteConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ItemBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.MovimientoitemBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleCompra_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ProveedorConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.DetalleCompraBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipomovimiento_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.DetalleVentaBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.CompraBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.MovimientoitemConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.CompraConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Servicio_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.MarcaConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Venta_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.Movimientoitem_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleVenta_Roo_Finder (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Finder.aj)
+info woven aspect ar.com.norrmann.coqui.model.Servicio_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Movimientoitem_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Item_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.CategoriaBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Venta_Roo_JavaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_JavaBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.ClienteDebe_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.Item_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ItemConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Marca_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.Categoria_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Servicio_Roo_JavaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_JavaBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ClienteBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Cliente_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.Venta_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Proveedor_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.AutomotorBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Marca_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.model.Modelo_Roo_Finder (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Finder.aj)
+info woven aspect ar.com.norrmann.coqui.model.Modelo_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipoitem_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.model.Automotor_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.model.Modelo_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.model.ClienteDebe_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleVenta_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleCompra_Roo_Finder (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Finder.aj)
+info woven aspect ar.com.norrmann.coqui.model.Cliente_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.TipomovimientoBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipomovimiento_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.DetalleCompraConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Item_Roo_Finder (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_Finder.aj)
+info woven aspect ar.com.norrmann.coqui.model.Servicio_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.Cliente_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.DetalleVentaConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleVenta_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ModeloConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.CompraBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ClienteBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.VentaConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Movimientoitem_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Venta_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.TipoitemBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ProveedorBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.TipoitemBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.Categoria_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Item_Roo_JavaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_JavaBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.ClienteDebe_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ApplicationBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleVenta_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.DetalleCompraConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Categoria_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Movimientoitem_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.CategoriaBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ClienteConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ItemservicioConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Automotor_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ModeloConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ServicioBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Automotor_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Automotor_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Compra_Roo_JavaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_JavaBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.Servicio_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.VentaConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Item_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.AutomotorConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.TipomovimientoBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.VentaBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.DetalleVentaBean_Roo_Serializable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_Serializable.aj)
+info woven aspect ar.com.norrmann.coqui.model.ClienteDebe_Roo_JavaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe_Roo_JavaBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.Modelo_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.DetalleCompraBean_Roo_Serializable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean_Roo_Serializable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ProveedorConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.VentaBean_Roo_Serializable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_Serializable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Modelo_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ModeloBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleCompra_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.Compra_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Proveedor_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ServicioConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.Proveedor_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.VentaBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.CompraConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleCompra_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.TipomovimientoConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.MarcaConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleVenta_Roo_JavaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_JavaBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ItemServicioBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipoitem_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.model.Marca_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Compra_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ItemConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ModeloBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.MarcaBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleCompra_Roo_JavaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra_Roo_JavaBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.Itemservicio_Roo_Finder (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Finder.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ItemServicioBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.DetalleVentaBean_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Itemservicio_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipoitem_Roo_ToString (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_ToString.aj)
+info woven aspect ar.com.norrmann.coqui.model.Marca_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Itemservicio_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.CompraBean_Roo_Serializable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean_Roo_Serializable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipomovimiento_Roo_DbManaged (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_DbManaged.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipoitem_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.CategoriaConverter_Roo_Converter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter_Roo_Converter.aj)
+info woven aspect ar.com.norrmann.coqui.model.DetalleVenta_Roo_Jpa_Entity (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta_Roo_Jpa_Entity.aj)
+info woven aspect ar.com.norrmann.coqui.model.Tipomovimiento_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.AutomotorConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.model.Modelo_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ItemservicioConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter_Roo_Configurable.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.ServicioBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.model.Movimientoitem_Roo_Jpa_ActiveRecord (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem_Roo_Jpa_ActiveRecord.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.AutomotorBean_Roo_ManagedBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean_Roo_ManagedBean.aj)
+info woven aspect ar.com.norrmann.coqui.jsf.converter.ServicioConverter_Roo_Configurable (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter_Roo_Configurable.aj)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem.java
+info woven class ar.com.norrmann.coqui.model.Tipoitem (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipoitem.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean.java
+info woven class ar.com.norrmann.coqui.jsf.AutomotorBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\AutomotorBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\MensajeUtil.java
+info woven class ar.com.norrmann.coqui.jsf.util.MensajeUtil (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\MensajeUtil.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean.java
+info woven class ar.com.norrmann.coqui.jsf.DetalleVentaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleVentaBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.ModeloConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ModeloConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.DetalleVentaConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleVentaConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo.java
+info woven class ar.com.norrmann.coqui.model.Modelo (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Modelo.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor.java
+info woven class ar.com.norrmann.coqui.model.Automotor (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Automotor.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe.java
+info woven class ar.com.norrmann.coqui.model.ClienteDebe (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\ClienteDebe.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\ViewExpiredExceptionExceptionHandlerFactory.java
+info woven class ar.com.norrmann.coqui.jsf.util.ViewExpiredExceptionExceptionHandlerFactory (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\ViewExpiredExceptionExceptionHandlerFactory.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta.java
+info woven class ar.com.norrmann.coqui.model.DetalleVenta (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleVenta.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente.java
+info woven class ar.com.norrmann.coqui.model.Cliente (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Cliente.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean.java
+info woven class ar.com.norrmann.coqui.jsf.ClienteBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ClienteBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio.java
+info woven class ar.com.norrmann.coqui.model.Itemservicio (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Itemservicio.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.MarcaConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MarcaConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem.java
+info woven class ar.com.norrmann.coqui.model.Movimientoitem (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Movimientoitem.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.MovimientoitemConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\MovimientoitemConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria.java
+info woven class ar.com.norrmann.coqui.model.Categoria (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Categoria.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean.java
+info woven class ar.com.norrmann.coqui.jsf.ItemServicioBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemServicioBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.VentaConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\VentaConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean.java
+info woven class ar.com.norrmann.coqui.jsf.ModeloBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ModeloBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean.java
+info woven class ar.com.norrmann.coqui.jsf.VentaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\VentaBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento.java
+info woven class ar.com.norrmann.coqui.model.Tipomovimiento (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Tipomovimiento.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor.java
+info woven class ar.com.norrmann.coqui.model.Proveedor (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Proveedor.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean.java
+info woven class ar.com.norrmann.coqui.jsf.ServicioBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ServicioBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.TipoitemConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipoitemConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean.java
+info woven class ar.com.norrmann.coqui.jsf.CategoriaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CategoriaBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item.java
+info woven class ar.com.norrmann.coqui.model.Item (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Item.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\ViewExpiredExceptionExceptionHandler.java
+info woven class ar.com.norrmann.coqui.jsf.util.ViewExpiredExceptionExceptionHandler (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\ViewExpiredExceptionExceptionHandler.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean.java
+info woven class ar.com.norrmann.coqui.jsf.TipoitemBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipoitemBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.DetalleCompraConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\DetalleCompraConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.CompraConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CompraConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean.java
+info woven class ar.com.norrmann.coqui.jsf.CompraBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\CompraBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra.java
+info woven class ar.com.norrmann.coqui.model.DetalleCompra (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\DetalleCompra.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean.java
+info woven class ar.com.norrmann.coqui.jsf.ProveedorBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ProveedorBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean.java
+info woven class ar.com.norrmann.coqui.jsf.MovimientoitemBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MovimientoitemBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.CategoriaConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\CategoriaConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean.java
+info woven class ar.com.norrmann.coqui.jsf.MarcaBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\MarcaBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean.java
+abort trouble in: 
+ar.com.norrmann.coqui.jsf.ItemBean -- (OutOfMemoryError) Java heap space
+Java heap space
+java.lang.OutOfMemoryError: Java heap space
+	at org.aspectj.apache.bcel.classfile.ClassParser.readMethods(ClassParser.java:238)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:144)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:424)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+	at org.aspectj.weaver.World.resolve(World.java:326)
+	at org.aspectj.weaver.World.resolve(World.java:236)
+	at org.aspectj.weaver.UnresolvedType.resolve(UnresolvedType.java:616)
+	at org.aspectj.weaver.patterns.KindedPointcut.warnOnConfusingSig(KindedPointcut.java:245)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:205)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:50)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3167)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.matchInvokeInstruction(BcelClassWeaver.java:3115)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2774)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2552)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.weaveQueuedEntries(AjPipeliningCompilerAdapter.java:514)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.queueForWeaving(AjPipeliningCompilerAdapter.java:447)
+
+info woven class ar.com.norrmann.coqui.jsf.ItemBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ItemBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio.java
+info woven class ar.com.norrmann.coqui.model.Servicio (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Servicio.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra.java
+info woven class ar.com.norrmann.coqui.model.Compra (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Compra.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.TipomovimientoConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\TipomovimientoConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\LocaleBean.java
+info woven class ar.com.norrmann.coqui.jsf.util.LocaleBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\util\LocaleBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta.java
+info woven class ar.com.norrmann.coqui.model.Venta (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Venta.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean.java
+info woven class ar.com.norrmann.coqui.jsf.DetalleCompraBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\DetalleCompraBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca.java
+info woven class ar.com.norrmann.coqui.model.Marca (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\Marca.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.AutomotorConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\AutomotorConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean.java
+info woven class ar.com.norrmann.coqui.jsf.TipomovimientoBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\TipomovimientoBean.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.ServicioConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ServicioConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\FormaDePago.java
+info woven class ar.com.norrmann.coqui.model.FormaDePago (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\model\FormaDePago.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.ProveedorConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ProveedorConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.ItemservicioConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemservicioConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.ClienteConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ClienteConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter.java
+info woven class ar.com.norrmann.coqui.jsf.converter.ItemConverter (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\converter\ItemConverter.java)
+info compiling C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean.java
+abort trouble in: 
+ar.com.norrmann.coqui.jsf.ApplicationBean -- (OutOfMemoryError) Java heap space
+Java heap space
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.addEntry(HashMap.java:753)
+	at java.util.HashMap.put(HashMap.java:385)
+	at java.util.HashSet.add(HashSet.java:200)
+	at org.aspectj.apache.bcel.generic.InstructionHandle.addTargeter(InstructionHandle.java:161)
+	at org.aspectj.apache.bcel.generic.MethodGen.<init>(MethodGen.java:300)
+	at org.aspectj.weaver.bcel.LazyMethodGen.initialize(LazyMethodGen.java:336)
+	at org.aspectj.weaver.bcel.LazyMethodGen.markAsChanged(LazyMethodGen.java:504)
+	at org.aspectj.weaver.bcel.LazyMethodGen.getBody(LazyMethodGen.java:894)
+	at org.aspectj.weaver.bcel.BcelShadow.makeShadowForMethod(BcelShadow.java:679)
+	at org.aspectj.weaver.bcel.BcelShadow.makeMethodExecution(BcelShadow.java:675)
+	at org.aspectj.weaver.bcel.BcelShadow.makeMethodExecution(BcelShadow.java:655)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2531)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.weaveQueuedEntries(AjPipeliningCompilerAdapter.java:514)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.queueForWeaving(AjPipeliningCompilerAdapter.java:447)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:432)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:98)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:652)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:392)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1021)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:268)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:181)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:371)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:248)
+	at org.codehaus.mojo.aspectj.AbstractAjcCompiler.execute(AbstractAjcCompiler.java:360)
+
+info woven class ar.com.norrmann.coqui.jsf.ApplicationBean (from C:\Documents and Settings\enorrmann\Mis documentos\My Dropbox\PROYECTOS\lubricentro coqui\LubricentroJsf\src\main\java\ar\com\norrmann\coqui\jsf\ApplicationBean.java)
+warning at org\springframework\mock\staticmock\AnnotationDrivenStaticEntityMockingControl.aj:64::0 advice defined in org.springframework.mock.staticmock.AnnotationDrivenStaticEntityMockingControl has not been applied [Xlint:adviceDidNotMatch]
+warning at C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aspects\3.1.0.RELEASE\spring-aspects-3.1.0.RELEASE.jar!org\springframework\mock\staticmock\AbstractMethodMockingControl.class:160::0 advice defined in org.springframework.mock.staticmock.AbstractMethodMockingControl has not been applied [Xlint:adviceDidNotMatch]
+warning at C:\Documents and Settings\enorrmann\.m2\repository\org\springframework\spring-aspects\3.1.0.RELEASE\spring-aspects-3.1.0.RELEASE.jar!org\springframework\scheduling\aspectj\AbstractAsyncExecutionAspect.class:52::0 advice defined in org.springframework.scheduling.aspectj.AbstractAsyncExecutionAspect has not been applied [Xlint:adviceDidNotMatch]

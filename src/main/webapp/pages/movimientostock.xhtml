@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="../templates/layout.xhtml">
+    <ui:define name="content">
+        <p:growl id="messages" showDetail="false" />
+        <h:form prependId="false">
+            <p:panel id="data" toggleable="true" toggleSpeed="250">
+                <f:facet name="header">
+                    Ingresos y egresos de Stock
+                </f:facet>
+                <h:outputFormat id="noRecordsFound" value="#{messages.label_no_records_found}" rendered="#{!movimientostockBean.dataVisible}">
+                   <f:param value="Movimientostocks" />
+                </h:outputFormat>
+                <p:dataTable id="list" value="#{movimientostockBean.allMovimientostocks}" var="movimientostock" rendered="#{movimientostockBean.dataVisible}" resizableColumns="false" paginator="true" rows="10">
+                    <p:column><f:facet name="header">Tipo de Movimiento</f:facet>
+                    #{movimientostock.tipoMovimientoId.tipoMovimiento}
+                    </p:column>
+
+                    <p:columns value="#{movimientostockBean.columns}" var="column" columnIndexVar="colIndex">
+                        <f:facet name="header">
+                            <h:outputText value="#{applicationBean.getColumnName(column)}" />
+                        </f:facet>
+                        <h:outputText value="#{movimientostock[column]}" />
+                    </p:columns>
+                    <p:column styleClass="action-column">
+                        <f:facet name="header">
+                            <h:outputText value="#{messages.label_actions}" />
+                        </f:facet>
+                        <p:commandButton ajax="false" id="viewButton" icon="ui-icon-zoomin" action="#{movimientostockBean.goDetalle}" title="#{messages.label_view}">
+                            <f:setPropertyActionListener value="#{movimientostock}" target="#{movimientostockBean.movimientostock}" />
+                            <f:setPropertyActionListener value="#{movimientostock}" target="#{detallemovimientostockBean.movimientoStock}" />
+                        </p:commandButton>
+                        <p:tooltip for="viewButton" value="#{messages.label_view}" showEffect="fade" hideEffect="fade" />
+                        <p:commandButton id="editButton" icon="ui-icon-pencil" action="#{movimientostockBean.onEdit}" update="editDialog" oncomplete="editDialog.show()" title="#{messages.label_edit}">
+                            <f:setPropertyActionListener value="#{movimientostock}" target="#{movimientostockBean.movimientostock}" />
+                        </p:commandButton>
+                        <p:tooltip for="editButton" value="#{messages.label_edit}" showEffect="fade" hideEffect="fade" />
+                        <p:commandButton id="deleteButton" icon="ui-icon-trash" oncomplete="deleteDialog.show()" title="#{messages.label_delete}" >
+                            <f:setPropertyActionListener value="#{movimientostock}" target="#{movimientostockBean.movimientostock}" />
+                        </p:commandButton>
+                        <p:tooltip for="deleteButton" value="#{messages.label_delete}" showEffect="fade" hideEffect="fade" />
+                    </p:column>
+                </p:dataTable>
+            </p:panel>
+        </h:form>
+        <p:dialog id="createDialog" header="#{messages.label_create} Movimientostock" modal="true" widgetVar="createDialog" dynamic="true" visible="#{movimientostockBean.createDialogVisible}" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+            <p:ajax event="close" update="data" listener="#{movimientostockBean.handleDialogClose}" />
+            <h:form id="createForm" enctype="multipart/form-data">
+                <h:panelGrid id="createPanelGrid" columns="3" binding="#{movimientostockBean.createPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3">
+		 <h:outputText value="Tipo Movimiento"/>
+		<p:selectOneMenu id="tipoMovimientoIdCreateInput" value="#{movimientostockBean.movimientostock.tipoMovimientoId}" converter="#{movimientostockBean.tipomovimientoConverter}">  
+      <f:selectItems  value="#{applicationBean.tipomovimientoAll}" var="tipoMovimiento" itemLabel="#{tipoMovimiento.tipoMovimiento}" itemValue="#{tipoMovimiento}"/> 
+        </p:selectOneMenu>  
+                </h:panelGrid>
+                <p:commandButton value="#{messages.label_save}" action="#{movimientostockBean.persist}" update="createPanelGrid messages" />
+                <p:commandButton value="#{messages.label_close}" onclick="createDialog.hide()" type="button" />
+            </h:form>
+        </p:dialog>
+        <p:dialog id="editDialog" header="#{messages.label_edit} Movimientostock" modal="true" widgetVar="editDialog" dynamic="true" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+            <p:ajax event="close" update="data" listener="#{movimientostockBean.handleDialogClose}" />
+            <h:form id="editForm" enctype="multipart/form-data">
+                <h:panelGrid id="editPanelGrid" columns="3" binding="#{movimientostockBean.editPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
+                <p:commandButton value="#{messages.label_save}" action="#{movimientostockBean.persist}" update="editPanelGrid messages" />
+                <p:commandButton value="#{messages.label_close}" onclick="editDialog.hide()" type="button" />
+            </h:form>
+        </p:dialog>
+        <p:dialog id="viewDialog" header="#{messages.label_view} Movimientostock" modal="true" widgetVar="viewDialog" dynamic="true" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
+            <h:form id="viewForm" enctype="multipart/form-data">
+                <h:panelGrid id="viewPanelGrid" columns="2" binding="#{movimientostockBean.viewPanelGrid}" styleClass="dialog" columnClasses="col1,col2" />
+                <p:commandButton value="#{messages.label_close}" onclick="viewDialog.hide()" type="button" />
+            </h:form>
+        </p:dialog>
+        <p:confirmDialog id="deleteDialog" widgetVar="deleteDialog" message="#{messages.label_delete_record}" showEffect="fade" hideEffect="explode" header="#{messages.label_confirm_deletion}" severity="alarm">
+            <h:form id="deleteForm">
+                <p:commandButton value="#{messages.label_yes}" action="#{movimientostockBean.delete}" update="data" oncomplete="deleteDialog.hide()" />
+                <p:commandButton value="#{messages.label_no}" onclick="deleteDialog.hide()" type="button" />
+            </h:form>
+        </p:confirmDialog>
+    </ui:define>
+</ui:composition>
+</html>

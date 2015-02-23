@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="../templates/layout.xhtml">
+  <ui:define name="content">
+    <h:form prependId="false" id="growlForm">
+      <p:growl id="growl" showDetail="false" />
+    </h:form>
+      <p:panel id="data" toggleable="true" toggleSpeed="250">
+        <f:facet name="header">
+          Nueva Venta
+        </f:facet>
+        <!-- desde aca  -->
+
+      <p:outputPanel id="createPanel">
+        <h:form id="createForm">
+       <p:remoteCommand name="increment" actionListener="#{ventaBean.addToDetalleList}" update="list" process="itCodigo"/>
+          <h:panelGrid id="createPanelGrid" columns="3" binding="#{ventaBean.createPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3">
+			Codigo
+          	<p:inputText id="itCodigo" value="#{ventaBean.codigoProducto}" onkeypress="return customfunction(event);"/>
+			<p:message for="itCodigo" display="icon" />
+			Referencia
+			<p:autoComplete
+				id="acReferencia"
+				maxResults="10"
+				minQueryLength="2"
+				queryDelay="1000"
+				completeMethod="#{compraBean.completeCodigoReferenciaProducto}" var="item" itemLabel="#{item.nombreLargo}" itemValue="#{item}" converter="#{compraBean.itemConverter}">
+				<p:ajax event="itemSelect" listener="#{ventaBean.addToDetalleListFromReferencia}" update="list,acReferencia" />
+			</p:autoComplete>
+			<p:message for="acReferencia" display="icon" />
+          </h:panelGrid>
+          
+<p:dataTable
+		id="list"
+		value="#{ventaBean.detalleVentaList}"
+		var="detalleVenta"
+		resizableColumns="false"
+		paginator="false"
+		emptyMessage="#{messages.label_empty_datatable}">
+		<p:column><f:facet name="header">Producto</f:facet>
+			#{detalleVenta.item}
+		</p:column>
+		<p:column><f:facet name="header">Cantidad</f:facet>
+			<p:inputText autocomplete="false" value="#{detalleVenta.cantidad}">
+				<p:ajax update="createForm:list"/>
+			</p:inputText>
+		</p:column>
+		<p:column><f:facet name="header">Precio Unitario</f:facet>
+			<p:inputText autocomplete="false" value="#{detalleVenta.precioUnitario}">
+				<p:ajax update="createForm:list"/>
+			</p:inputText>
+		</p:column>
+		<p:column id="colTotal" headerText="Total">
+			<h:outputText id="otTotal" value="#{detalleVenta.precioTotal}"/>
+			<f:facet name="footer">
+	 			<h:outputText value="#{ventaBean.totalVenta}"/>
+			</f:facet>
+		</p:column>
+		</p:dataTable>
+		
+	
+		
+          <p:commandButton id="createSaveButton" value="Guardar"  ajax="false" action="#{ventaBean.guardarNuevaVenta}"/>
+          <script type="text/javascript">
+				 function customfunction(e) {
+					 if (e.keyCode==13){
+						 increment();
+							var input = document.getElementById("createForm:itCodigo");
+							input.value= "";
+						    input.focus();
+						 return false;
+					 }
+					 return true;
+			 	 	 
+				 }
+			</script>
+        </h:form>
+      </p:outputPanel>
+
+        
+        <!-- hasta aca  -->
+      </p:panel>
+  </ui:define>
+</ui:composition>
+</html>

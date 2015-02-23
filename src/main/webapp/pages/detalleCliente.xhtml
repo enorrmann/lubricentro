@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<ui:composition template="../templates/layout.xhtml">
+  <ui:define name="content">
+    <h:form prependId="false" id="growlForm">
+      <p:growl id="growl" showDetail="false" />
+    </h:form>
+      <p:panel id="data" toggleable="true" toggleSpeed="250">
+        <f:facet name="header">
+          Detalles del cliente
+        </f:facet>
+             <h:form id="viewForm">
+                <h:panelGrid columns="2" styleClass="dialog" columnClasses="col1,col2">
+                	<h:outputText value="Nombre:"/><h:outputText value="#{clienteBean.cliente.apellido}, #{clienteBean.cliente.nombres}"/>
+                	<h:outputText value="Domicilio:"/><h:outputText value="#{clienteBean.cliente.domicilio}"/>
+                	<h:outputText value="Teléfono:"/><h:outputText value="#{clienteBean.cliente.telefono}"/>
+                	<h:outputText value="C.U.I.T. :"/><h:outputText value="#{clienteBean.cliente.cuit}"/>
+                	<h:outputText value="e-mail:"/><h:outputText value="#{clienteBean.cliente.email}"/>
+                </h:panelGrid>
+                <p:commandButton value="Volver" action="cliente" ajax="false"/>
+            </h:form>
+ </p:panel>
+  </ui:define>
+</ui:composition>
+</html>
