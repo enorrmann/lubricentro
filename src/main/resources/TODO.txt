@@ -1,0 +1,24 @@
+<li class="ui-menuitem ui-widget ui-corner-all" role="menuitem">
+
+$("li[role=menuitem]:contains('cliente')").hide(600)
+
+
+id="menuForm:createClienteMenuItem" class="ui-menuitem-link
+
+$(".ui-menuitem-link :contains('cliente')").parent().hide(600)
+
+$(".ui-menuitem-link [id*='Cliente']")
+
+$("li[role=menuitem]").hide(600)
+$("[id*='Cliente']").parent().show(600)
+
+$("li.ui-menuitem").hide(600)
+
+<h3>clientes
+
+$("h3:contains('Cliente')").click(function() {
+	$("li[role=menuitem]").toggle(600);$("[id*='Cliente']").parent().toggle(600);
+});
+
+$("h3:contains('Cliente')").click(function() {$("not[id*='Cliente']").parent().hide(600);$("[id*='Cliente']").parent().show(600);});
+$("h3:contains('Cliente')").click(function() {$("[id*='Cliente']").parent().toggle(600);});
