@@ -1,0 +1,8 @@
+package ar.com.norrmann.coqui.jsf.converter;
+
+import ar.com.norrmann.coqui.model.DetalleVenta;
+import org.springframework.roo.addon.jsf.converter.RooJsfConverter;
+
+@RooJsfConverter(entity = DetalleVenta.class)
+public class DetalleVentaConverter {
+}
