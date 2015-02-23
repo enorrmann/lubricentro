@@ -5,10 +5,11 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Query;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
@@ -36,6 +37,12 @@ public class Venta {
     @Enumerated
     @NotNull
     private FormaDePago formaDePago;
+
+    public List<ar.com.norrmann.coqui.model.Pago> getPagos() {
+    	Query  query = entityManager().createQuery("SELECT o FROM Pago p where p.venta = :venta", Pago.class);
+    	query.setParameter("venta", this);
+        return query.getResultList();
+    }   
 
     public BigDecimal getPrecioTotal() {
         List<DetalleVenta> detalleList = DetalleVenta.findDetalleVentasByVenta(this).getResultList();

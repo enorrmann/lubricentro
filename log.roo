@@ -318,3 +318,9 @@ exit
 exit
 // Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2015-02-23 12:15:15
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-02-23 12:16:56
+hint
+entity jpa --class ar.com.norrmann.model.Pago 
+field date --fieldName fecha --type java.util.Date --notNull 
+field number --fieldName importe --type java.math.BigDecimal --notNull 
+field reference --type ~.model.Venta --fieldName venta
+field string --fieldName observaciones 
