@@ -10,7 +10,8 @@
     <ui:define name="content">
         <p:growl id="messages" showDetail="false" />
         <h:form prependId="false">
-            <p:panel id="data" toggleable="true" toggleSpeed="250">
+            <p:panel id="data" toggleable="false" toggleSpeed="250">
+		        <ui:include src="filtro_items.xhtml"/>
                 <f:facet name="header">
                     <h:outputText value="#{itemBean.name}"/>
                 </f:facet>
@@ -90,7 +91,6 @@
 						 return false;
 					 }
 					 return true;
-			 	 	 
 				 }
 			</script>
                 <h:panelGrid id="createPanelGrid" columns="3" binding="#{itemBean.createPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />

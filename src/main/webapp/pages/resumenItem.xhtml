@@ -5,6 +5,7 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions"
       xmlns:p="http://primefaces.org/ui">
 <ui:composition template="../templates/layout.xhtml">
     <ui:define name="content">
@@ -19,15 +20,14 @@
 					value="#{itemBean.resumenItemList}"
 					var="item"
 					resizableColumns="false"
-					paginator="true"
-					rows="10"
+					paginator="false"
 					filterEvent="enter"
 					emptyMessage="#{messages.label_empty_datatable}"
 					paginatorPosition="bottom">
 
                 <f:facet name="header">
 					<p:commandButton icon="ui-icon-print" title="Imprimir" value="Imprimir" ajax="false" >
-						<p:dataExporter type="pdf" target="list" fileName="resumen"/>
+						<p:dataExporter type="pdf" target="list" fileName="resumen" excludeColumns="2,3"/>
 					</p:commandButton>
                 </f:facet>
                     <p:column>
@@ -38,24 +38,27 @@
                     <f:facet name="header">Categoria</f:facet>
 	                    <h:outputText value="#{item.categoria}"/>
                     </p:column>
-                    <p:column>
+                    <p:column rendered="false">
                     <f:facet name="header">Marca</f:facet>
 	                    <h:outputText value="#{item.marca}"/>
                     </p:column>
-                    <p:column>
+                    <p:column rendered="false">
                     <f:facet name="header">Descripcion</f:facet>
 	                    <h:outputText value="#{item.item}"/>
                     </p:column>
                     <p:column><f:facet name="header">Stock</f:facet>
 	                    <h:outputText value="#{item.stockActual}"/>
+	                    <f:facet name="footer"><h:outputText value="#{itemBean.stockTotal}"/></f:facet>
                     </p:column>
                     <p:column><f:facet name="header">Costo</f:facet>
 	                    <h:outputText value="#{item.sumaCosto}"/>
+	                    <f:facet name="footer"><h:outputText value="#{itemBean.totalCosto}"/></f:facet>
                     </p:column>
                     <p:column><f:facet name="header">Venta</f:facet>
 	                    <h:outputText value="#{item.sumaVenta}"/>
+	                    <f:facet name="footer"><h:outputText value="#{itemBean.totalVenta}"/></f:facet>
                     </p:column>
-                </p:dataTable>
+		</p:dataTable>
             </p:panel>
         </h:form>
     </ui:define>

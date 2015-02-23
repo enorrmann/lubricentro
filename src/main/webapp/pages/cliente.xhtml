@@ -29,8 +29,8 @@
 					<p:dataExporter type="pdf" target="list" fileName="Clientes" excludeColumns="4"/>
 				</p:commandButton>
                 </f:facet>
-                <p:column><f:facet name="header">Nombre</f:facet><h:outputText value="#{cliente.nombreCompleto}"/></p:column>
-                <p:column><f:facet name="header">C.U.I.T.</f:facet><h:outputText value="#{cliente.cuit}"/></p:column>
+                <p:column filterBy="#{cliente.nombreCompleto}" filterMatchMode="contains"><f:facet name="header">Nombre</f:facet><h:outputText value="#{cliente.nombreCompleto}"/></p:column>
+                <p:column filterBy="#{cliente.cuit}" filterMatchMode="contains"><f:facet name="header">C.U.I.T.</f:facet><h:outputText value="#{cliente.cuit}"/></p:column>
                 <p:column><f:facet name="header">Domicilio</f:facet><h:outputText value="#{cliente.domicilio}"/></p:column>
                 <p:column><f:facet name="header">Contacto</f:facet><h:outputText value="#{cliente.email}"/><br/><h:outputText value="#{cliente.telefono}"/></p:column>
                     <p:column styleClass="action-column">
@@ -58,7 +58,8 @@
             <h:form id="createForm" enctype="multipart/form-data">
                 <h:panelGrid id="createPanelGrid" columns="3" binding="#{clienteBean.createPanelGrid}" styleClass="dialog" columnClasses="col1,col2,col3" />
                 <p:commandButton value="#{messages.label_save}" action="#{clienteBean.persist}" update="createPanelGrid messages" />
-                <p:commandButton value="#{messages.label_close}" onclick="createDialog.hide()" type="button" />
+                &nbsp;&nbsp;&nbsp;
+                <p:commandButton value="#{messages.label_close}" onclick="if (confirm('Salir sin guardar el cliente ?')){createDialog.hide();}" type="button" />
             </h:form>
         </p:dialog>
         <p:dialog id="editDialog" header="#{messages.label_edit} Cliente" modal="true" widgetVar="editDialog" dynamic="true" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">

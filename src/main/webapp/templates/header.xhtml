@@ -8,5 +8,16 @@
     <title>#{applicationBean.appName}</title>
     <h:outputStylesheet library="css" name="standard.css" />
     <h:outputScript library="js" name="calendar.js" />
+	<script type="text/javascript">
+		 function anularEnter(e) {
+			 if (e.keyCode==13){
+				 return false;
+			 }
+		 }
+		  function deshabilitar(){
+			  document.getElementById('confirm').disabled='true';
+			  document.getElementById('confirm').innerHTML='<span class="ui-button-text">Espere por favor ...</span>';
+		  }
+	</script>
 </ui:composition>
 </html>

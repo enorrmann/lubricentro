@@ -12,6 +12,22 @@
         </ui:insert>
     </h:head>
     <h:body>
+    
+     <p:dialog widgetVar="estado" modal="true" closable="true" id="estado">
+	 Por favor, espere ...
+ </p:dialog>
+     <p:confirmDialog id="confirmDialog"  
+                header="Actualizacion de precios" severity="alert" widgetVar="confirmation">
+<f:facet name="message">
+<h:outputText id="otMensaje" value="Confirma la variación de #{itemBean.filtroItem.porcentajeAAumentar} % a #{itemBean.cantidadItems} productos ?"/>
+
+</f:facet>  
+ <h:form prependId="false">
+        <p:commandButton id="confirm" value="Si" oncomplete="confirmation.hide()" update="contentGrid" ajax="true" actionListener="#{itemBean.destroyWorld}"/>  
+        <p:commandButton id="decline" value="No" onclick="confirmation.hide()" type="button" />   
+        </h:form>          
+    </p:confirmDialog>
+ 
         <h:panelGrid cellspacing="0" cellpadding="0" styleClass="wrapper">
             <h:panelGrid columns="2" columnClasses="menu,content">
                 <p:panel cellspacing="0" cellpadding="0" styleClass="menu">
@@ -25,7 +41,7 @@
                     </h:form>
                 </p:panel>
                 <h:panelGroup>
-                    <h:panelGrid cellspacing="0" cellpadding="0" styleClass="content">
+                    <h:panelGrid id="contentGrid" cellspacing="0" cellpadding="0" styleClass="content">
                         <ui:insert name="content" />
                     </h:panelGrid>
                     <ui:insert name="footer">

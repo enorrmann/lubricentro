@@ -35,6 +35,16 @@
 				<p:ajax event="itemSelect" listener="#{ventaBean.addToDetalleListFromReferencia}" update="list,acReferencia" />
 			</p:autoComplete>
 			<p:message for="acReferencia" display="icon" />
+			Descripcion
+			<p:autoComplete
+				id="acDescripcion"
+				maxResults="10"
+				minQueryLength="3"
+				queryDelay="1000"
+				completeMethod="#{ventaBean.completeDescripcionProducto}" var="item" itemLabel="#{item.descripcion}" itemValue="#{item}" converter="#{compraBean.itemConverter}">
+				<p:ajax event="itemSelect" listener="#{ventaBean.addToDetalleListFromReferencia}" update="list,acDescripcion" />
+			</p:autoComplete>
+			<p:message for="acDescripcion" display="icon" />
           </h:panelGrid>
           
 <p:dataTable
@@ -45,7 +55,7 @@
 		paginator="false"
 		emptyMessage="#{messages.label_empty_datatable}">
 		<p:column><f:facet name="header">Producto</f:facet>
-			#{detalleVenta.item}
+			#{detalleVenta.item.descripcion}
 		</p:column>
 		<p:column><f:facet name="header">Cantidad</f:facet>
 			<p:inputText autocomplete="false" value="#{detalleVenta.cantidad}">
