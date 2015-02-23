@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+<table>
+<tr>
+<td width="70%" valign="top">
+<p:panel id="filtroItems" rendered="#{itemBean.tipoLista=='PRODUCTOS'}">
+<f:facet name="header">Filtrar la lista</f:facet>
+<h:panelGrid columns="5">
+
+Ver<p:selectOneMenu
+	value="#{itemBean.filtroItem.categoria}"
+	converter="#{itemBean.categoriaConverter}"> 
+	<f:selectItem itemValue="" itemLabel="Todas las Categorias"/>
+	<f:selectItems
+		value="#{itemBean.categoriaProductoAll}"
+		var="categoria"
+		itemLabel="#{categoria.categoria}"
+		itemValue="#{categoria}"/>
+	<p:ajax listener="#{itemBean.filtrarLista}" process="@this" update="list"/> 
+</p:selectOneMenu>  
+de<p:selectOneMenu
+	value="#{itemBean.filtroItem.marca}"
+	converter="#{itemBean.marcaConverter}">
+	<f:selectItem itemValue="" itemLabel="Todas las Marcas"/>  
+	<f:selectItems
+		value="#{itemBean.marcaProductoAll}"
+		var="marca"
+		itemLabel="#{marca.marca}"
+		itemValue="#{marca}"/>
+	<p:ajax listener="#{itemBean.filtrarLista}" process="@this" update="list"/> 
+</p:selectOneMenu>  
+<p:commandButton action="#{itemBean.filtrarLista}" value="Aplicar filtro" ajax="false"/>
+</h:panelGrid>
+</p:panel>
+</td>
+<td width="30%" valign="top">
+<p:panel id="aumentoPanel" rendered="#{itemBean.tipoLista=='PRODUCTOS'}">
+<f:facet name="header">Actualizar precios</f:facet>
+<h:panelGrid columns="4">
+<p:inputText onkeypress="return anularEnter(event);" id="itPorcentaje" value="#{itemBean.filtroItem.porcentajeAAumentar}" maxlength="6" size="6" >
+<p:ajax event="keyup" update="otMensaje"/>
+</p:inputText>%
+<p:message for="itPorcentaje" showDetail="false" display="icon"/>
+<p:commandButton rendered="false" onclick="estado.show()" oncomplete="estado.hide()" action="#{itemBean.aumentarPorcentaje}" value="Aumentar" ajax="true" update="@form messages" process="@form"/>
+<p:commandButton id="showDialogButton" value="Actualizar" onclick="confirmation.show()" type="button"/>  
+</h:panelGrid>
+</p:panel>
+</td>
+</tr>
+</table>
+</f:view>
+
+</html>
