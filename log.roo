@@ -328,3 +328,5 @@ field string --fieldName observaciones
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-02-24 10:55:35
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-02-24 10:57:33
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-02-24 12:41:09
+web jsf all --package ar.com.norrmann.coqui.jsf
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-02-24 13:18:01
