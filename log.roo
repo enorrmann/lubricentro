@@ -324,3 +324,7 @@ field date --fieldName fecha --type java.util.Date --notNull
 field number --fieldName importe --type java.math.BigDecimal --notNull 
 field reference --type ~.model.Venta --fieldName venta
 field string --fieldName observaciones 
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-02-23 15:01:13
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-02-24 10:55:35
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-02-24 10:57:33
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-02-24 12:41:09

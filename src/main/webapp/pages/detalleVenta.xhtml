@@ -26,19 +26,6 @@
 	     	<h:outputText value="Cliente: "/><h:outputText value="#{ventaBean.venta.cliente.apellido}, #{ventaBean.venta.cliente.nombres}"/>
 	     	<h:outputText value="Forma de pago: "/><h:outputText value="#{ventaBean.venta.formaDePago}"/>
 	     	
-	     	Codigo:
-	          	<p:inputText id="itCodigo" value="#{detalleVentaBean.codigoProducto}" onkeypress="return customfunction(event);"/>
-				<p:commandButton rendered="false" id="addDetalleButton" icon="ui-icon-search" action="#{detalleVentaBean.displayCreateDialog}" title="Buscar producto" ajax="false"/>
-     		Referencia:
-			<p:autoComplete
-				id="acReferencia"
-				maxResults="10"
-				minQueryLength="2"
-				queryDelay="1000"
-				completeMethod="#{compraBean.completeCodigoReferenciaProducto}" var="item" itemLabel="#{item.nombreLargo}" itemValue="#{item}" converter="#{compraBean.itemConverter}">
-				<p:ajax event="itemSelect" listener="#{detalleVentaBean.addToDetalleListFromReferencia}" update="list,acReferencia" />
-			</p:autoComplete>
-			<p:message for="acReferencia" display="icon" />
      	</h:panelGrid>
 
         
@@ -65,19 +52,6 @@
 			</f:facet>
 			
 		</p:column>
-          <p:column styleClass="action-column">
-            <f:facet name="header">
-              <h:outputText value="Acciones" />
-            </f:facet>
-            <p:commandButton id="editButton" icon="ui-icon-pencil" update=":editForm:editPanelGrid" action="#{detalleVentaBean.onEdit}" oncomplete="editDialog.show()" title="#{messages.label_edit}">
-              <f:setPropertyActionListener value="#{detalleVenta}" target="#{detalleVentaBean.detalleVenta}" />
-            </p:commandButton>
-            <p:tooltip for="editButton" value="#{messages.label_edit}" showEffect="fade" hideEffect="fade" />
-            <p:commandButton id="deleteButton" icon="ui-icon-trash" oncomplete="deleteDialog.show()" title="#{messages.label_delete}">
-              <f:setPropertyActionListener value="#{detalleVenta}" target="#{detalleVentaBean.detalleVenta}" />
-            </p:commandButton>
-            <p:tooltip for="deleteButton" value="#{messages.label_delete}" showEffect="fade" hideEffect="fade" />
-          </p:column>
         </p:dataTable>
       </p:panel>
       

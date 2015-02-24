@@ -24,9 +24,9 @@
                 	<h:outputText value="e-mail:"/><h:outputText value="#{clienteBean.cliente.email}"/>
                 </h:panelGrid>
                 <p:commandButton value="Volver" action="cliente" ajax="false"/>
-            </h:form>
+            
  
-  <p:dataTable id="list" value="#{clienteBean.cliente.ventas}" var="venta" resizableColumns="false" paginator="true" rows="10">
+  <p:dataTable id="list" value="#{clienteBean.cliente.ventas}" var="venta" resizableColumns="false" paginator="false">
           <p:column><f:facet name="header">Fecha</f:facet>
           	<h:outputText value="#{venta.fecha}">
                       <f:convertDateTime pattern="dd/MM/yyyy" />
@@ -34,10 +34,18 @@
           </p:column>
           <p:column><f:facet name="header">Forma de Pago</f:facet><h:outputText value="#{venta.formaDePago}"/></p:column>
           <p:column><f:facet name="header">Importe</f:facet><h:outputText value="#{venta.precioTotal}"/></p:column>
+          <p:column styleClass="action-column">
+            <f:facet name="header">
+              <h:outputText value="#{messages.label_actions}"/>
+            </f:facet>
+            <p:commandButton id="viewButton" icon="ui-icon-zoomin" ajax="false" action="#{detalleVentaBean.onView}" title="#{messages.label_view}">
+              <f:setPropertyActionListener value="#{venta}" target="#{ventaBean.venta}" />
+            </p:commandButton>
+            </p:column>
 
         </p:dataTable>
         
-        
+       </h:form> 
  </p:panel>
   </ui:define>
 </ui:composition>
