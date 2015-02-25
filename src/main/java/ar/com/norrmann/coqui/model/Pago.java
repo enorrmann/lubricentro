@@ -20,7 +20,7 @@ public class Pago {
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date fecha;
+    private Date fecha = new Date();
 
     @NotNull
     private BigDecimal importe;

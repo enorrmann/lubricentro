@@ -38,8 +38,8 @@ public class Venta {
     @NotNull
     private FormaDePago formaDePago;
 
-    public List<ar.com.norrmann.coqui.model.Pago> getPagos() {
-    	Query  query = entityManager().createQuery("SELECT o FROM Pago p where p.venta = :venta", Pago.class);
+    public List<Pago> getPagos() {
+    	Query  query = entityManager().createQuery("SELECT p FROM Pago p where p.venta = :venta", Pago.class);
     	query.setParameter("venta", this);
         return query.getResultList();
     }   
@@ -54,5 +54,24 @@ public class Venta {
             total = total.add(unDetalleVenta.getPrecioTotal());
         }
         return total;
+    }
+    
+    public BigDecimal getTotalPagado() {
+    	List<Pago> pagos = getPagos();
+        BigDecimal totalPagado = new BigDecimal(0);
+        if (pagos == null || pagos.isEmpty()) {
+            return totalPagado;
+        }
+        for (Pago unPago : pagos) {
+        	totalPagado = totalPagado.add(unPago.getImporte());
+        }
+        return totalPagado;
+    }
+    
+    public BigDecimal getSaldo() {
+    	if (formaDePago.equals(FormaDePago.Contado)){
+    		return new BigDecimal(0);
+    	}
+        return getPrecioTotal().subtract(getTotalPagado());
     }
 }

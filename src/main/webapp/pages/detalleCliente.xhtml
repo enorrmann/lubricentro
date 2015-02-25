@@ -22,6 +22,7 @@
                 	<h:outputText value="Teléfono:"/><h:outputText value="#{clienteBean.cliente.telefono}"/>
                 	<h:outputText value="C.U.I.T. :"/><h:outputText value="#{clienteBean.cliente.cuit}"/>
                 	<h:outputText value="e-mail:"/><h:outputText value="#{clienteBean.cliente.email}"/>
+                	<h:outputText value="SALDO:"/><h:outputText value="#{clienteBean.cliente.saldo}"/>
                 </h:panelGrid>
                 <p:commandButton value="Volver" action="cliente" ajax="false"/>
             
@@ -34,6 +35,7 @@
           </p:column>
           <p:column><f:facet name="header">Forma de Pago</f:facet><h:outputText value="#{venta.formaDePago}"/></p:column>
           <p:column><f:facet name="header">Importe</f:facet><h:outputText value="#{venta.precioTotal}"/></p:column>
+          <p:column><f:facet name="header">Saldo</f:facet><h:outputText value="#{venta.saldo}"/></p:column>
           <p:column styleClass="action-column">
             <f:facet name="header">
               <h:outputText value="#{messages.label_actions}"/>
