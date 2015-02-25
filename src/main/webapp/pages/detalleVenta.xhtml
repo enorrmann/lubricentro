@@ -27,7 +27,10 @@
 	     	<h:outputText value="Forma de pago: "/><h:outputText value="#{ventaBean.venta.formaDePago}"/>
 			<h:outputText value="Pagado"/><h:outputText value="#{ventaBean.venta.totalPagado}"/>
 	     	<h:outputText value="Cliente: "/><h:outputText value="#{ventaBean.venta.cliente.apellido}, #{ventaBean.venta.cliente.nombres}"/>
-			<h:outputText value="Saldo"/><h:outputText value="#{ventaBean.venta.saldo}"/>
+			<h:outputText value="Saldo"/>
+                		<h:outputText style="background-color:red;color:white;font-weight: bold;" value="#{ventaBean.venta.saldo}" rendered="#{ventaBean.venta.saldo gt 0}"/>
+                		<h:outputText value="#{ventaBean.venta.saldo}" rendered="#{not (ventaBean.venta.saldo gt 0)}"/>
+			
 	    </h:panelGrid> 	
 
         <p:dataTable
