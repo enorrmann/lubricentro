@@ -11,23 +11,33 @@
     <h:form prependId="false" id="growlForm">
       <p:growl id="growl" showDetail="false" />
     </h:form>
-      <p:panel id="data" toggleable="true" toggleSpeed="250">
+
+	<h:form id="viewForm">
+      <p:panel id="data">
         <f:facet name="header">
           Detalles del cliente
         </f:facet>
-             <h:form id="viewForm">
-                <h:panelGrid columns="2" styleClass="dialog" columnClasses="col1,col2">
+                
+                
+                <h:panelGrid columns="4" width="80%" columnClasses="col1,col2,col1,col2">
+
                 	<h:outputText value="Nombre:"/><h:outputText value="#{clienteBean.cliente.apellido}, #{clienteBean.cliente.nombres}"/>
                 	<h:outputText value="Domicilio:"/><h:outputText value="#{clienteBean.cliente.domicilio}"/>
                 	<h:outputText value="Teléfono:"/><h:outputText value="#{clienteBean.cliente.telefono}"/>
                 	<h:outputText value="C.U.I.T. :"/><h:outputText value="#{clienteBean.cliente.cuit}"/>
                 	<h:outputText value="e-mail:"/><h:outputText value="#{clienteBean.cliente.email}"/>
-                	<h:outputText value="SALDO:"/><h:outputText value="#{clienteBean.cliente.saldo}"/>
+                	<h:outputText value="SALDO:"/>
+                		<h:outputText style="background-color:red;color:white;font-weight: bold;" value="#{clienteBean.cliente.saldo}" rendered="#{clienteBean.cliente.saldo gt 0}"/>
+                		<h:outputText value="#{clienteBean.cliente.saldo}" rendered="#{not (clienteBean.cliente.saldo gt 0)}"/>
+
                 </h:panelGrid>
+                
                 <p:commandButton value="Volver" action="cliente" ajax="false"/>
-            
- 
+                </p:panel>
+            <p:panel>
+  			<f:facet name="header">Ventas</f:facet>
   <p:dataTable id="list" value="#{clienteBean.cliente.ventas}" var="venta" resizableColumns="false" paginator="false">
+  
           <p:column><f:facet name="header">Fecha</f:facet>
           	<h:outputText value="#{venta.fecha}">
                       <f:convertDateTime pattern="dd/MM/yyyy" />
@@ -47,8 +57,8 @@
 
         </p:dataTable>
         
-       </h:form> 
  </p:panel>
+       </h:form> 
   </ui:define>
 </ui:composition>
 </html>

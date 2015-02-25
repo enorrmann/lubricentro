@@ -16,20 +16,20 @@
     <h:form prependId="false" id="dataForm">
            <p:remoteCommand name="increment" actionListener="#{detalleVentaBean.addToDetalleList}" update="list" process="itCodigo"/>
     
-      <p:panel id="data" toggleable="true" toggleSpeed="250">
+      <p:panel id="data">
         <f:facet name="header">
           Detalles de la venta
         </f:facet>
 
-    <h:panelGrid id="pgDatosVenta" columns="2" styleClass="dialog" columnClasses="col1,col2">
+    <h:panelGrid id="pgDatosVenta" columns="4" width="80%" columnClasses="col1,col2,col1,col2">
 	     	<h:outputText value="Fecha: "/><h:outputText value="#{ventaBean.venta.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText>
-	     	<h:outputText value="Cliente: "/><h:outputText value="#{ventaBean.venta.cliente.apellido}, #{ventaBean.venta.cliente.nombres}"/>
+			<h:outputText value="Total"/><h:outputText value="#{ventaBean.venta.precioTotal}"/>
 	     	<h:outputText value="Forma de pago: "/><h:outputText value="#{ventaBean.venta.formaDePago}"/>
-	     	<h:outputText value="SALDO: "/><h:outputText value="#{ventaBean.venta.saldo}"/>
-	     	
-     	</h:panelGrid>
+			<h:outputText value="Pagado"/><h:outputText value="#{ventaBean.venta.totalPagado}"/>
+	     	<h:outputText value="Cliente: "/><h:outputText value="#{ventaBean.venta.cliente.apellido}, #{ventaBean.venta.cliente.nombres}"/>
+			<h:outputText value="Saldo"/><h:outputText value="#{ventaBean.venta.saldo}"/>
+	    </h:panelGrid> 	
 
-        
         <p:dataTable
 			id="list"
 			value="#{detalleVentaBean.allDetalleVentas}"
@@ -37,9 +37,6 @@
 			resizableColumns="false"
 			paginator="false"
 			emptyMessage="#{messages.label_empty_datatable}">
-			 <f:facet name="header">
-        		Productos
-    		</f:facet>
 		<p:column><f:facet name="header">Producto</f:facet>
 			#{detalleVenta.item}
 		</p:column>
@@ -57,12 +54,14 @@
 			
 		</p:column>
         </p:dataTable>
+        </p:panel>
 
+<p:panel id="panelPagos">
+        <f:facet name="header">
+          Pagos
+        </f:facet>
 
         <p:dataTable id="pagoList" value="#{ventaBean.venta.pagos}" var="pago" resizableColumns="false" paginator="false">
-			<f:facet name="header">
-        		Pagos
-    		</f:facet>
         
 			<p:column><f:facet name="header">Fecha</f:facet>
 			 <h:outputText value="#{pago.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText>
@@ -84,7 +83,7 @@
           </p:column>
 </p:dataTable>
 
-<p:commandButton id="nuevoPagoButton" icon="ui-icon-plus" action="#{pagoBean.displayCreateDialog}" value="Nuevo Pago" ajax="false">
+<p:commandButton id="nuevoPagoButton" icon="ui-icon-plus" action="#{pagoBean.displayCreateDialog}" value="Registrar Pago" ajax="false">
 	
 </p:commandButton>
 </p:panel>
@@ -103,7 +102,7 @@
  <p:confirmDialog id="deleteDialog" widgetVar="deleteDialog" message="#{messages.label_delete_record}" showEffect="fade" hideEffect="explode" header="#{messages.label_confirm_deletion}" severity="alarm">
       <p:outputPanel id="deletePanel">
         <h:form id="deleteForm">
-          <p:commandButton id="deleteYesButton" value="#{messages.label_yes}" action="#{pagoBean.delete}" update=":dataForm:data :growlForm:growl" oncomplete="deleteDialog.hide()" />
+          <p:commandButton id="deleteYesButton" value="#{messages.label_yes}" action="#{pagoBean.delete}" update=":dataForm:data :growlForm:growl pagoList" oncomplete="deleteDialog.hide()" />
           <p:commandButton id="deleteNoButton" value="#{messages.label_no}" onclick="deleteDialog.hide()" type="button" />
         </h:form>
       </p:outputPanel>
