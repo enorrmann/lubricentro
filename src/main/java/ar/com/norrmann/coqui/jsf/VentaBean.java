@@ -9,6 +9,7 @@ import javax.el.ELContext;
 import javax.el.ExpressionFactory;
 import javax.faces.application.Application;
 import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedProperty;
 import javax.faces.component.html.HtmlOutputText;
 import javax.faces.component.html.HtmlPanelGrid;
 import javax.faces.context.FacesContext;
@@ -37,6 +38,10 @@ public class VentaBean {
     private Venta venta;
 	private String codigoProducto;
     private List<DetalleVenta> detalleVentaList;
+    
+    @ManagedProperty("#{clienteBean}")
+    private ClienteBean clienteBean;
+    
     
     public HtmlPanelGrid populateCreatePanel() {
         FacesContext facesContext = FacesContext.getCurrentInstance();
@@ -120,6 +125,7 @@ public class VentaBean {
 
 	public String goNuevaVenta() {
         venta = new Venta();
+        venta.setCliente(clienteBean.getCliente());
         codigoProducto = "";
         detalleVentaList = new ArrayList<DetalleVenta>();
        return "nuevaVenta";
@@ -244,6 +250,13 @@ public class VentaBean {
 	}
 	public List<Item> completeDescripcionProducto(String query) {
 		return Item.findItemsByDescripcionLike(query).getResultList();
+	}
+	
+	public ClienteBean getClienteBean(){
+		return clienteBean;
+	}
+	public void setClienteBean(ClienteBean clienteBean){
+		this.clienteBean = clienteBean;
 	}
 
 }
