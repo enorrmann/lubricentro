@@ -1,6 +1,8 @@
 package ar.com.norrmann.coqui.jsf;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.el.ELContext;
@@ -15,14 +17,13 @@ import org.primefaces.component.inputtext.InputText;
 import org.primefaces.component.message.Message;
 import org.springframework.roo.addon.jsf.managedbean.RooJsfManagedBean;
 
-import ar.com.norrmann.coqui.model.Automotor;
 import ar.com.norrmann.coqui.model.Cliente;
 
 @RooJsfManagedBean(entity = Cliente.class, beanName = "clienteBean")
 public class ClienteBean {
 	
     private ArrayList<String> columns;
-
+    private BigDecimal saldoTotal; 
 
 	@PostConstruct
     public void init() {
@@ -171,8 +172,35 @@ public class ClienteBean {
     	return populateCreatePanel();
     	
     }
+    
+    public String displayMorosoList() {
+        setCreateDialogVisible(false);
+        saldoTotal = new BigDecimal(0);
+        List<Cliente> clientesAll = Cliente.findAllClientes();
+        setAllClientes(new ArrayList<Cliente>());
+        for (Cliente unCliente : clientesAll){
+        	BigDecimal saldo = unCliente.getSaldo(); 
+        	if (saldo.compareTo(new BigDecimal(0))>0){
+        		getAllClientes().add(unCliente);
+        		saldoTotal = saldoTotal.add(saldo);
+        	}
+        }
+        setDataVisible(!getAllClientes().isEmpty());
+        return "cliente";
+    }
+
     public String onEdit() {
         return null;
     }
+
+
+	public BigDecimal getSaldoTotal() {
+		return saldoTotal;
+	}
+
+
+	public void setSaldoTotal(BigDecimal saldoTotal) {
+		this.saldoTotal = saldoTotal;
+	}
 
 }

@@ -97,3 +97,8 @@ a:visited {
 .ui-datatable-data{
 	text-align: center;	
 }
+.saldo{
+	background-color:red;
+	color:white;
+	font-weight: bold;
+}

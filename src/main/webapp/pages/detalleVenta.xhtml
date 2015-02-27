@@ -18,7 +18,7 @@
     
       <p:panel id="data">
         <f:facet name="header">
-          Detalles de la venta
+          Detalles de la venta numero #{ventaBean.venta.id}
         </f:facet>
 
     <h:panelGrid id="pgDatosVenta" columns="4" width="80%" columnClasses="col1,col2,col1,col2">
@@ -35,7 +35,7 @@
 
         <p:dataTable
 			id="list"
-			value="#{detalleVentaBean.allDetalleVentas}"
+			value="#{ventaBean.venta.detalleVentaList}"
 			var="detalleVenta"
 			resizableColumns="false"
 			paginator="false"
@@ -64,7 +64,9 @@
           Pagos
         </f:facet>
 
-        <p:dataTable id="pagoList" value="#{ventaBean.venta.pagos}" var="pago" resizableColumns="false" paginator="false">
+        <p:dataTable
+        emptyMessage="No se realizaron pagos" 
+        id="pagoList" value="#{ventaBean.venta.pagos}" var="pago" resizableColumns="false" paginator="false">
         
 			<p:column><f:facet name="header">Fecha</f:facet>
 			 <h:outputText value="#{pago.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText>

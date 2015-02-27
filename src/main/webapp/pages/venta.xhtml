@@ -25,6 +25,7 @@
                       <f:convertDateTime pattern="dd/MM/yyyy" />
                     </h:outputText>
           </p:column>
+          <p:column> <f:facet name="header">Numero</f:facet><h:outputText value="#{venta.id}"/></p:column>
           <p:column filterBy="#{venta.cliente.nombreCompleto}" filterMatchMode="contains"><f:facet name="header">Cliente</f:facet><h:outputText value="#{venta.cliente.nombreCompleto}"/></p:column>
           <p:column filterBy="#{venta.formaDePago}"><f:facet name="header">Forma de Pago</f:facet><h:outputText value="#{venta.formaDePago}"/></p:column>
           <p:column styleClass="action-column">

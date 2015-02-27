@@ -97,7 +97,12 @@ public class PagoBean {
 	    }
 	    
 	 public String displayCreateDialog() {
-	        setPago(new Pago());
+		 Venta venta = ventaBean.getVenta();
+		 Pago pago = new Pago();
+		 if (venta != null ){
+			 pago.setImporte(venta.getSaldo());
+		 }
+	        setPago(pago);
 	        setCreateDialogVisible(true);
 	        return "detalleVenta";
 	    }

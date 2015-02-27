@@ -27,16 +27,18 @@
                 	<h:outputText value="C.U.I.T. :"/><h:outputText value="#{clienteBean.cliente.cuit}"/>
                 	<h:outputText value="e-mail:"/><h:outputText value="#{clienteBean.cliente.email}"/>
                 	<h:outputText value="SALDO:"/>
-                		<h:outputText style="background-color:red;color:white;font-weight: bold;" value="#{clienteBean.cliente.saldo}" rendered="#{clienteBean.cliente.saldo gt 0}"/>
+                		<h:outputText styleClass="saldo" value="#{clienteBean.cliente.saldo}" rendered="#{clienteBean.cliente.saldo gt 0}"/>
                 		<h:outputText value="#{clienteBean.cliente.saldo}" rendered="#{not (clienteBean.cliente.saldo gt 0)}"/>
 
                 </h:panelGrid>
                 
-                <p:commandButton value="Volver" action="cliente" ajax="false"/>
+
                 </p:panel>
             <p:panel>
   			<f:facet name="header">Ventas</f:facet>
-  <p:dataTable id="list" value="#{clienteBean.cliente.ventas}" var="venta" resizableColumns="false" paginator="false">
+  <p:dataTable
+  emptyMessage="No se realizaron ventas"
+  id="list" value="#{clienteBean.cliente.ventas}" var="venta" resizableColumns="false" paginator="false">
   
           <p:column><f:facet name="header">Fecha</f:facet>
           	<h:outputText value="#{venta.fecha}">
@@ -46,7 +48,9 @@
           <p:column><f:facet name="header">Numero</f:facet><h:outputText value="#{venta.id}"/></p:column>
           <p:column><f:facet name="header">Forma de Pago</f:facet><h:outputText value="#{venta.formaDePago}"/></p:column>
           <p:column><f:facet name="header">Importe</f:facet><h:outputText value="#{venta.precioTotal}"/></p:column>
-          <p:column><f:facet name="header">Saldo</f:facet><h:outputText value="#{venta.saldo}"/></p:column>
+          <p:column><f:facet name="header">Saldo</f:facet>
+          	<h:outputText styleClass="saldo" value="#{venta.saldo}" rendered="#{venta.saldo gt 0}"/>
+          </p:column>
           <p:column styleClass="action-column">
             <f:facet name="header">
               <h:outputText value="#{messages.label_actions}"/>
@@ -58,10 +62,12 @@
 
         </p:dataTable>
 
-<p:commandButton id="nuevaVentaButton" icon="ui-icon-plus" action="#{ventaBean.goNuevaVenta}" value="Registrar Venta" ajax="false">
+<p:commandButton id="nuevaVentaButton" icon="ui-icon-plus" action="#{ventaBean.goNuevaVentaDeCliente}" value="Registrar Venta" ajax="false">
 </p:commandButton>
         
  </p:panel>
+
+<p:commandButton value="Volver" action="cliente" ajax="false" rendered="false"/>
        </h:form> 
   </ui:define>
 </ui:composition>

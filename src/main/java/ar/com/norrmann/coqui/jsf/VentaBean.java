@@ -28,6 +28,7 @@ import ar.com.norrmann.coqui.model.Cliente;
 import ar.com.norrmann.coqui.model.DetalleVenta;
 import ar.com.norrmann.coqui.model.FormaDePago;
 import ar.com.norrmann.coqui.model.Item;
+import ar.com.norrmann.coqui.model.Pago;
 import ar.com.norrmann.coqui.model.Tipomovimiento;
 import ar.com.norrmann.coqui.model.Venta;
 
@@ -125,12 +126,16 @@ public class VentaBean {
 
 	public String goNuevaVenta() {
         venta = new Venta();
-        venta.setCliente(clienteBean.getCliente());
         codigoProducto = "";
         detalleVentaList = new ArrayList<DetalleVenta>();
        return "nuevaVenta";
    }
-
+	
+	public String goNuevaVentaDeCliente() {
+		goNuevaVenta();
+        getVenta().setCliente(clienteBean.getCliente());
+       return "nuevaVenta";
+   }
 	public Venta getVenta() {
 		return venta;
 	}
@@ -167,25 +172,28 @@ public class VentaBean {
 	}
     public String guardarNuevaVenta() {
     	Tipomovimiento tipoMovimiento = Tipomovimiento.findTipomovimiento(Tipomovimiento.ID_MOVIMIENTO_EGRESO_STOCK);
-        String message = "";
-        if (venta.getId() != null) {
-        	venta.merge();
-            message = MensajeUtil.ACTUALIZADO_CORRECTAMENTE;
-        } else {
-        	venta.persist();
-            message = MensajeUtil.GUARDADO_CORRECTAMENTE;
-        }
+
+        venta.persist();
+        String message = MensajeUtil.GUARDADO_CORRECTAMENTE;
+
         for (DetalleVenta unDetalleVenta : detalleVentaList){
         	unDetalleVenta.setVenta(venta);
         	unDetalleVenta.updateMovimientoEgresoStock(tipoMovimiento);
         	unDetalleVenta.persist();
         	unDetalleVenta.getItem().calcularStockActual();
         }
-
+        if (venta.getFormaDePago().equals(FormaDePago.Contado)){
+    		Pago pago = new Pago();
+    		pago.setVenta(venta);
+    		pago.setObservaciones("Pago contado");
+    		pago.setFecha(venta.getFecha());
+    		pago.setImporte(venta.getPrecioTotal());
+    		pago.persist();
+    	}
         FacesMessage facesMessage = new FacesMessage(message);
         FacesContext.getCurrentInstance().addMessage(null, facesMessage);
-        findAllVentas();
-        return "venta";
+        //findAllVentas();
+        return "detalleVenta";
     }
     
     public String delete() {

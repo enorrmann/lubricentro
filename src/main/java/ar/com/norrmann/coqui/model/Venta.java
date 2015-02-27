@@ -29,7 +29,7 @@ public class Venta {
 
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date fecha;
+    private Date fecha = new Date();
 
     @OneToMany(cascade = { javax.persistence.CascadeType.ALL, javax.persistence.CascadeType.REMOVE }, mappedBy = "venta")
     private Set<DetalleVenta> detalleList = new HashSet<DetalleVenta>();
@@ -40,6 +40,11 @@ public class Venta {
 
     public List<Pago> getPagos() {
     	Query  query = entityManager().createQuery("SELECT p FROM Pago p where p.venta = :venta", Pago.class);
+    	query.setParameter("venta", this);
+        return query.getResultList();
+    }   
+    public List<DetalleVenta> getDetalleVentaList() {
+    	Query  query = entityManager().createQuery("SELECT dv FROM DetalleVenta dv where dv.venta = :venta", DetalleVenta.class);
     	query.setParameter("venta", this);
         return query.getResultList();
     }   

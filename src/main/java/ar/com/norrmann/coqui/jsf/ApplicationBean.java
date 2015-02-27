@@ -62,6 +62,7 @@ public class ApplicationBean {
         item.setAsync(false);
         item.setUpdate("data");
         submenu.getChildren().add(item);
+        // listar todos clientes
         item = new MenuItem();
         item.setId("listClienteMenuItem");
         item.setValueExpression("value", expressionFactory.createValueExpression(elContext, "#{messages.label_list} Clientes", String.class));
@@ -71,6 +72,17 @@ public class ApplicationBean {
         item.setAsync(false);
         item.setUpdate("data");
         submenu.getChildren().add(item);
+        // listar clientes MOROSOS
+        item = new MenuItem();
+        item.setId("listClienteMorosoMenuItem");
+        item.setValueExpression("value", expressionFactory.createValueExpression(elContext, "#{messages.label_list} morosos", String.class));
+        item.setActionExpression(expressionFactory.createMethodExpression(elContext, "#{clienteBean.displayMorosoList}", String.class, new Class[0]));
+        item.setIcon("ui-icon ui-icon-folder-open");
+        item.setAjax(false);
+        item.setAsync(false);
+        item.setUpdate("data");
+        submenu.getChildren().add(item);
+
         menuModel.addSubmenu(submenu);
 
         item = new MenuItem();
