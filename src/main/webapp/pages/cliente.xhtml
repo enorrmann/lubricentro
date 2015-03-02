@@ -26,16 +26,18 @@
 					paginatorPosition="bottom">
                 <f:facet name="header">
 				<p:commandButton icon="ui-icon-print" title="Imprimir" value="Imprimir" ajax="false" >
-					<p:dataExporter type="pdf" target="list" fileName="Clientes" excludeColumns="4"/>
+					<p:dataExporter type="pdf" target="list" fileName="Clientes" excludeColumns="5"/>
 				</p:commandButton>
                 </f:facet>
                 <p:column filterBy="#{cliente.nombreCompleto}" filterMatchMode="contains"><f:facet name="header">Nombre</f:facet><h:outputText value="#{cliente.nombreCompleto}"/></p:column>
                 <p:column filterBy="#{cliente.cuit}" filterMatchMode="contains"><f:facet name="header">C.U.I.T.</f:facet><h:outputText value="#{cliente.cuit}"/></p:column>
                 <p:column><f:facet name="header">Domicilio</f:facet><h:outputText value="#{cliente.domicilio}"/></p:column>
-                <p:column><f:facet name="header">Contacto</f:facet><h:outputText value="#{cliente.email}"/><br/><h:outputText value="#{cliente.telefono}"/></p:column>
+                <p:column><f:facet name="header">Contacto</f:facet>
+                <h:outputText value="#{cliente.email}"/>
+                <h:outputText value=" tel: #{cliente.telefono}" rendered="#{not empty cliente.telefono}"/></p:column>
                 <p:column><f:facet name="header">Saldo</f:facet>
                 	<h:outputText styleClass="saldo" value="#{cliente.saldo}" rendered="#{cliente.saldo gt 0}"/>
-                	<f:facet name="footer">#{clienteBean.saldoTotal}</f:facet>
+                	<f:facet name="footer"><h:outputText value="#{clienteBean.saldoTotal}"/></f:facet>
                 	</p:column>
                     <p:column styleClass="action-column">
                         <f:facet name="header">
