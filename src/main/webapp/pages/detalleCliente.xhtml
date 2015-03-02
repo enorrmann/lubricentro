@@ -58,6 +58,9 @@
             <p:commandButton id="viewButton" icon="ui-icon-zoomin" ajax="false" action="#{detalleVentaBean.onView}" title="#{messages.label_view}">
               <f:setPropertyActionListener value="#{venta}" target="#{ventaBean.venta}" />
             </p:commandButton>
+            <p:commandButton icon="ui-icon-print" title="Imprimir" oncomplete="window.open('detalleVentaPrint.jsf'); return false;">
+              <f:setPropertyActionListener value="#{venta}" target="#{ventaBean.venta}" />
+            </p:commandButton>
             </p:column>
 
         </p:dataTable>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style>article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio[controls],canvas,video{display:inline-block}[hidden],audio{display:none}mark{background:#FF0;color:#000}</style>
+		<meta charset="utf-8"/>
+		<title>Presupuesto</title>
+		<link type="text/css" rel="stylesheet" href="/javax.faces.resource/factura.css.jsf?ln=css" />
+	</head>
+	<body>
+			<span><img class="" alt="" src="/javax.faces.resource/roo_logo.png.jsf?ln=images"/></span>
+			<br/><br/>
+		<header>
+			<h1>Presupuesto</h1>
+		</header>
+		<article>
+			<h1>Sr.</h1>
+			<address contenteditable="">
+				<p>#{ventaBean.venta.cliente.nombreCompleto}</p>
+			</address>
+			<table class="meta">
+				<tbody><tr>
+					<th><span contenteditable="">Presupuesto #</span></th>
+					<td><span contenteditable="">#{ventaBean.venta.id}</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Fecha</span></th>
+					<td><span contenteditable=""><h:outputText value="#{ventaBean.venta.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText></span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Importe</span></th>
+					<td><span id="prefix" contenteditable="">$</span><span>#{ventaBean.venta.precioTotal}</span></td>
+				</tr>
+			</tbody></table>
+			
+
+			<table class="inventory">
+				<thead>
+				<tr>
+					<th colspan="4">Productos</th>
+				</tr>
+					<tr>
+						<th><span contenteditable="">Producto</span></th>
+						<th><span contenteditable="">Cantidad</span></th>
+						<th><span contenteditable="">Precio Unitario</span></th>
+						<th><span contenteditable="">Total</span></th>
+					</tr>
+				</thead>
+				<tbody>
+				<ui:repeat value="#{ventaBean.venta.detalleVentaList}" var="detalleVenta">
+					<tr>
+						<td><span contenteditable="">#{detalleVenta.item}</span></td>
+						<td><span contenteditable="">#{detalleVenta.cantidad}</span></td>
+						<td><span data-prefix="">$</span><span contenteditable="">#{detalleVenta.precioUnitario}</span></td>
+						<td><span data-prefix="">$</span><span>#{detalleVenta.precioTotal}</span></td>
+					</tr>
+				</ui:repeat>
+				</tbody>
+			</table>
+			<ui:fragment rendered="#{not empty ventaBean.venta.pagos}">
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th colspan="3">Pagos</th>
+					</tr>
+					<tr>
+						<th><span contenteditable="">Fecha</span></th>
+						<th><span contenteditable="">Observaciones</span></th>
+						<th><span contenteditable="">Importe</span></th>
+					</tr>
+				</thead>
+				<tbody>
+				<ui:repeat value="#{ventaBean.venta.pagos}" var="pago">
+					<tr>
+						<td><span contenteditable=""><h:outputText value="#{pago.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText></span></td>
+						<td><span contenteditable="">#{pago.observaciones}</span></td>
+						<td><span data-prefix="">$</span><span>#{pago.importe}</span></td>
+					</tr>
+				</ui:repeat>
+				</tbody>
+			</table>			
+			</ui:fragment>
+
+			<table class="balance">
+				<tbody><tr>
+					<th><span contenteditable="">Total</span></th>
+					<td><span data-prefix="">$</span><span>#{ventaBean.venta.precioTotal}</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Pagado</span></th>
+					<td><span data-prefix="">$</span><span contenteditable="">#{ventaBean.venta.totalPagado}</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Saldo</span></th>
+					<td><span data-prefix="">$</span><span>#{ventaBean.venta.saldo}</span></td>
+				</tr>
+			</tbody>
+			</table>
+
+		</article>
+		<script>
+			window.print();
+		</script>
+</body>
+</html>

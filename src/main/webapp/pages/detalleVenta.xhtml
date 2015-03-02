@@ -14,8 +14,7 @@
 
     
     <h:form prependId="false" id="dataForm">
-           <p:remoteCommand name="increment" actionListener="#{detalleVentaBean.addToDetalleList}" update="list" process="itCodigo"/>
-    
+   
       <p:panel id="data">
         <f:facet name="header">
           Detalles de la venta numero #{ventaBean.venta.id}
@@ -92,6 +91,8 @@
 	
 </p:commandButton>
 </p:panel>
+	<p:button value="Imprimir" type="button" icon="ui-icon-print" onclick="window.open('detalleVentaPrint.jsf'); return false;" />
+
     </h:form>
 
         <p:dialog id="createDialog" header="#{messages.label_create} Pago" modal="true" widgetVar="createDialog" dynamic="true" visible="#{pagoBean.createDialogVisible}" resizable="true" maximizable="true" showEffect="fade" hideEffect="explode">
