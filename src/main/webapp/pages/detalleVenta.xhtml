@@ -14,7 +14,13 @@
 
     
     <h:form prependId="false" id="dataForm">
-   
+    <p:panel id="print" style="text-align:center;">
+    <f:facet name="header">
+<p:button value="Imprimir" type="button" icon="ui-icon-print" onclick="window.open('detalleVentaPrint.jsf'); return false;" />   
+    </f:facet>
+    </p:panel>
+    
+
       <p:panel id="data">
         <f:facet name="header">
           Detalles de la venta numero #{ventaBean.venta.id}
@@ -91,7 +97,6 @@
 	
 </p:commandButton>
 </p:panel>
-	<p:button value="Imprimir" type="button" icon="ui-icon-print" onclick="window.open('detalleVentaPrint.jsf'); return false;" />
 
     </h:form>
 
