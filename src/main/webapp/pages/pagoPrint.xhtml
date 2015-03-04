@@ -26,7 +26,7 @@
 
 			<div>
 				<p style="text-indent: 50px;line-height: 200%;">En fecha <h:outputText value="#{pagoBean.pago.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText> recibi del Sr./a #{ventaBean.venta.cliente.nombreCompleto} la suma de pesos #{pagoBean.pago.importe}
-				 como parte de pago del Presupuesto Num. #{ventaBean.venta.id}, cuyo importe total es de pesos #{ventaBean.venta.precioTotal}, quedando un saldo de pesos #{ventaBean.venta.saldo}</p>
+				 como parte de pago del presupuesto numero #{ventaBean.venta.id}, cuyo importe total es de pesos #{ventaBean.venta.precioTotal}, quedando un saldo de pesos #{ventaBean.venta.saldo}</p>
 			</div>
 		<script>
 			window.print();
