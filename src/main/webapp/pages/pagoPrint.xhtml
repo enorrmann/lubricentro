@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://java.sun.com/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style>article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio[controls],canvas,video{display:inline-block}[hidden],audio{display:none}mark{background:#FF0;color:#000}</style>
+		<meta charset="utf-8"/>
+		<title>Presupuesto</title>
+		<link type="text/css" rel="stylesheet" href="/javax.faces.resource/factura.css.jsf?ln=css" />
+	</head>
+	<body>
+		<header>
+			<h1>Recibo</h1>
+			<address>
+				<p>Lubricentro Coqui</p>
+				<p>de Martin Miguel Zucco Erro</p>
+				<p>Moreno 1575<br/>(3228) Chajari, E. Rios</p>
+				<p>(03456) 421769</p>
+			</address>
+			<span><img class="" alt="" src="/javax.faces.resource/roo_logo.png.jsf?ln=images"/></span>
+		</header>
+
+			<div>
+				<p style="text-indent: 50px;line-height: 200%;">En fecha <h:outputText value="#{pagoBean.pago.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText> recibi del Sr./a #{ventaBean.venta.cliente.nombreCompleto} la suma de pesos #{pagoBean.pago.importe}
+				 como parte de pago del Presupuesto Num. #{ventaBean.venta.id}, cuyo importe total es de pesos #{ventaBean.venta.precioTotal}, quedando un saldo de pesos #{ventaBean.venta.saldo}</p>
+			</div>
+		<script>
+			//window.print();
+		</script>
+</body>
+</html>
