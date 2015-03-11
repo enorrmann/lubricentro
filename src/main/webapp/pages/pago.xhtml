@@ -17,15 +17,36 @@
           <h:outputText value="#{pagoBean.name}" />
         </f:facet>
         <h:outputFormat id="noRecordsFound" value="#{messages.label_no_records_found}" rendered="#{!pagoBean.dataVisible}">
-          <f:param value="Pagoes" />
+          <f:param value="Pagos" />
         </h:outputFormat>
         <p:dataTable id="list" value="#{pagoBean.allPagoes}" var="pago" rendered="#{pagoBean.dataVisible}" resizableColumns="false" paginator="true" paginatorTemplate=" {CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}" rowsPerPageTemplate="5,10,25,50" rows="10">
-          <p:columns value="#{pagoBean.columns}" var="column" columnIndexVar="colIndex">
-            <f:facet name="header">
-              <h:outputText value="#{applicationBean.getColumnName(column)}" />
-            </f:facet>
-            <h:outputText value="#{pago[column]}" />
-          </p:columns>
+
+                <f:facet name="header">
+				<p:commandButton icon="ui-icon-print" title="Imprimir" value="Imprimir" ajax="false" >
+					<p:dataExporter type="pdf" target="list" fileName="Caja" excludeColumns="4"/>
+				</p:commandButton>
+                </f:facet>
+        
+        
+          <p:column filterBy="#{pago.fecha}" filterMatchMode="contains"><f:facet name="header">Fecha</f:facet>
+          	<h:outputText value="#{pago.fecha}">
+				<f:convertDateTime pattern="dd/MM/yyyy" />
+			</h:outputText>
+          </p:column>
+          
+          <p:column><f:facet name="header">Ingreso</f:facet>
+          	<h:outputText value="#{pago.importe}" rendered="#{pago.tipodePago == 'Ingreso'}"/>
+          </p:column>
+          
+          <p:column><f:facet name="header">Egreso</f:facet>
+          	<h:outputText styleClass="saldo" value="- #{pago.importe}" rendered="#{pago.tipodePago == 'Egreso'}"/>
+          </p:column>
+          
+          <p:column><f:facet name="header">Observaciones</f:facet>
+          	<h:outputText value="#{pago.observaciones}"/>
+          </p:column>
+
+
           <p:column styleClass="action-column">
             <f:facet name="header">
               <h:outputText value="Actions" />
@@ -34,7 +55,8 @@
               <f:setPropertyActionListener value="#{pago}" target="#{pagoBean.pago}" />
             </p:commandButton>
             <p:tooltip for="viewButton" value="#{messages.label_view}" showEffect="fade" hideEffect="fade" />
-            <p:commandButton id="editButton" icon="ui-icon-pencil" update=":editForm:editPanelGrid" action="#{pagoBean.onEdit}" oncomplete="editDialog.show()" title="#{messages.label_edit}">
+            <p:commandButton rendered="false" 
+            id="editButton" icon="ui-icon-pencil" update=":editForm:editPanelGrid" action="#{pagoBean.onEdit}" oncomplete="editDialog.show()" title="#{messages.label_edit}">
               <f:setPropertyActionListener value="#{pago}" target="#{pagoBean.pago}" />
             </p:commandButton>
             <p:tooltip for="editButton" value="#{messages.label_edit}" showEffect="fade" hideEffect="fade" />

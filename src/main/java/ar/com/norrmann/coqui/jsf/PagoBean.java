@@ -106,6 +106,24 @@ public class PagoBean {
 	        setCreateDialogVisible(true);
 	        return "detalleVenta";
 	    }
+
+	 public String nuevoIngreso() {
+		 ventaBean.setVenta(null);
+		 Pago pago = new Pago();
+		 pago.setTipodePago(TipoDePago.Ingreso);
+	        setPago(pago);
+	        setCreateDialogVisible(true);
+	        return "pago";
+	    }
+
+	 public String nuevoEgreso() {
+		 ventaBean.setVenta(null);
+		 Pago pago = new Pago();
+		 pago.setTipodePago(TipoDePago.Egreso);
+	        setPago(pago);
+	        setCreateDialogVisible(true);
+	        return "pago";
+	    }
 	   
 	 public String persist() {
 	        String message = "";

@@ -151,6 +151,7 @@ public class ApplicationBean {
         submenu.getChildren().add(item);
         menuModel.addSubmenu(submenu);
 
+// ventas
         submenu = new Submenu();
         submenu.setId("ventaSubmenu");
         submenu.setLabel("Ventas");
@@ -173,7 +174,45 @@ public class ApplicationBean {
         item.setUpdate(":dataForm:data");
         submenu.getChildren().add(item);
         menuModel.addSubmenu(submenu);
+// pagos
+        submenu = new Submenu();
+        submenu.setId("cajaSubmenu");
+        submenu.setLabel("Caja");
 
+        // ingreso
+        item = new MenuItem();
+        item.setId("createIngresoMenuItem");
+        item.setValueExpression("value", expressionFactory.createValueExpression(elContext, "Registrar ingreso", String.class));
+        item.setActionExpression(expressionFactory.createMethodExpression(elContext, "#{pagoBean.nuevoIngreso}", String.class, new Class[0]));
+        item.setIcon("ui-icon ui-icon-document");
+        item.setAjax(false);
+        item.setAsync(false);
+        item.setUpdate(":dataForm:data");
+        submenu.getChildren().add(item);
+
+        // egreso
+        item = new MenuItem();
+        item.setId("createEgresoMenuItem");
+        item.setValueExpression("value", expressionFactory.createValueExpression(elContext, "Registrar egreso", String.class));
+        item.setActionExpression(expressionFactory.createMethodExpression(elContext, "#{pagoBean.nuevoEgreso}", String.class, new Class[0]));
+        item.setIcon("ui-icon ui-icon-document");
+        item.setAjax(false);
+        item.setAsync(false);
+        item.setUpdate(":dataForm:data");
+        submenu.getChildren().add(item);
+
+        item = new MenuItem();
+        item.setId("listPagoMenuItem");
+        item.setValueExpression("value", expressionFactory.createValueExpression(elContext, "Listar pagos", String.class));
+        item.setActionExpression(expressionFactory.createMethodExpression(elContext, "#{pagoBean.displayList}", String.class, new Class[0]));
+        item.setIcon("ui-icon ui-icon-folder-open");
+        item.setAjax(false);
+        item.setAsync(false);
+        item.setUpdate(":dataForm:data");
+        submenu.getChildren().add(item);
+        menuModel.addSubmenu(submenu);
+
+        
         submenuAdministrar= new Submenu();
         submenuAdministrar.setId("administrarSubMenu");
         submenuAdministrar.setLabel("Administrar");

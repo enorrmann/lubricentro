@@ -4,6 +4,7 @@
 package ar.com.norrmann.coqui.jsf;
 
 import ar.com.norrmann.coqui.jsf.PagoBean;
+import ar.com.norrmann.coqui.jsf.TipoDePago;
 import ar.com.norrmann.coqui.jsf.converter.VentaConverter;
 import ar.com.norrmann.coqui.model.Pago;
 import ar.com.norrmann.coqui.model.Venta;
@@ -204,6 +205,25 @@ privileged aspect PagoBean_Roo_ManagedBean {
         observacionesEditInputMessage.setDisplay("icon");
         htmlPanelGrid.getChildren().add(observacionesEditInputMessage);
         
+        HtmlOutputText tipodePagoEditOutput = (HtmlOutputText) application.createComponent(HtmlOutputText.COMPONENT_TYPE);
+        tipodePagoEditOutput.setId("tipodePagoEditOutput");
+        tipodePagoEditOutput.setValue("Tipode Pago: * ");
+        htmlPanelGrid.getChildren().add(tipodePagoEditOutput);
+        
+        AutoComplete tipodePagoEditInput = (AutoComplete) application.createComponent(AutoComplete.COMPONENT_TYPE);
+        tipodePagoEditInput.setId("tipodePagoEditInput");
+        tipodePagoEditInput.setValueExpression("value", expressionFactory.createValueExpression(elContext, "#{pagoBean.pago.tipodePago}", TipoDePago.class));
+        tipodePagoEditInput.setCompleteMethod(expressionFactory.createMethodExpression(elContext, "#{pagoBean.completeTipodePago}", List.class, new Class[] { String.class }));
+        tipodePagoEditInput.setDropdown(true);
+        tipodePagoEditInput.setRequired(true);
+        htmlPanelGrid.getChildren().add(tipodePagoEditInput);
+        
+        Message tipodePagoEditInputMessage = (Message) application.createComponent(Message.COMPONENT_TYPE);
+        tipodePagoEditInputMessage.setId("tipodePagoEditInputMessage");
+        tipodePagoEditInputMessage.setFor("tipodePagoEditInput");
+        tipodePagoEditInputMessage.setDisplay("icon");
+        htmlPanelGrid.getChildren().add(tipodePagoEditInputMessage);
+        
         return htmlPanelGrid;
     }
     
@@ -256,6 +276,15 @@ privileged aspect PagoBean_Roo_ManagedBean {
         observacionesValue.setValueExpression("value", expressionFactory.createValueExpression(elContext, "#{pagoBean.pago.observaciones}", String.class));
         htmlPanelGrid.getChildren().add(observacionesValue);
         
+        HtmlOutputText tipodePagoLabel = (HtmlOutputText) application.createComponent(HtmlOutputText.COMPONENT_TYPE);
+        tipodePagoLabel.setId("tipodePagoLabel");
+        tipodePagoLabel.setValue("Tipode Pago:   ");
+        htmlPanelGrid.getChildren().add(tipodePagoLabel);
+        
+        HtmlOutputText tipodePagoValue = (HtmlOutputText) application.createComponent(HtmlOutputText.COMPONENT_TYPE);
+        tipodePagoValue.setValueExpression("value", expressionFactory.createValueExpression(elContext, "#{pagoBean.pago.tipodePago}", String.class));
+        htmlPanelGrid.getChildren().add(tipodePagoValue);
+        
         return htmlPanelGrid;
     }
     
@@ -276,6 +305,16 @@ privileged aspect PagoBean_Roo_ManagedBean {
             String ventaStr = String.valueOf(venta.getFecha());
             if (ventaStr.toLowerCase().startsWith(query.toLowerCase())) {
                 suggestions.add(venta);
+            }
+        }
+        return suggestions;
+    }
+    
+    public List<TipoDePago> PagoBean.completeTipodePago(String query) {
+        List<TipoDePago> suggestions = new ArrayList<TipoDePago>();
+        for (TipoDePago tipoDePago : TipoDePago.values()) {
+            if (tipoDePago.name().toLowerCase().startsWith(query.toLowerCase())) {
+                suggestions.add(tipoDePago);
             }
         }
         return suggestions;

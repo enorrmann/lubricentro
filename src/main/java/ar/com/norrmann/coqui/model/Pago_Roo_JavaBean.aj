@@ -3,6 +3,7 @@
 
 package ar.com.norrmann.coqui.model;
 
+import ar.com.norrmann.coqui.jsf.TipoDePago;
 import ar.com.norrmann.coqui.model.Pago;
 import ar.com.norrmann.coqui.model.Venta;
 import java.math.BigDecimal;
@@ -40,6 +41,14 @@ privileged aspect Pago_Roo_JavaBean {
     
     public void Pago.setObservaciones(String observaciones) {
         this.observaciones = observaciones;
+    }
+    
+    public TipoDePago Pago.getTipodePago() {
+        return this.tipodePago;
+    }
+    
+    public void Pago.setTipodePago(TipoDePago tipodePago) {
+        this.tipodePago = tipodePago;
     }
     
 }
