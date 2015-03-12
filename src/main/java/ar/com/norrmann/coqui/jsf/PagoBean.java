@@ -134,6 +134,7 @@ public class PagoBean {
 	 public String persist() {
 	        String message = "";
 	        getPago().setVenta(ventaBean.getVenta());
+	        filtroPagos.setFechaDesde(getPago().getFecha());
 	        if (getPago().getId() != null) {
 	        	getPago().merge();
 	            message = "Successfully updated";
