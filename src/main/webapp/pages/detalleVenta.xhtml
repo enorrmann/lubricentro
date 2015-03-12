@@ -27,11 +27,14 @@
         </f:facet>
 
     <h:panelGrid id="pgDatosVenta" columns="4" width="80%" columnClasses="col1,col2,col1,col2">
-	     	<h:outputText value="Fecha: "/><h:outputText value="#{ventaBean.venta.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText>
+	     	<h:outputText value="Cliente: "/>
+	     	<h:commandLink action="detalleCliente" value="#{ventaBean.venta.cliente.apellido}, #{ventaBean.venta.cliente.nombres}">
+	     		<f:setPropertyActionListener value="#{ventaBean.venta.cliente}" target="#{clienteBean.cliente}" />
+	     	</h:commandLink>
 			<h:outputText value="Total"/><h:outputText value="#{ventaBean.venta.precioTotal}"/>
-	     	<h:outputText value="Forma de pago: "/><h:outputText value="#{ventaBean.venta.formaDePago}"/>
+	     	<h:outputText value="Fecha: "/><h:outputText value="#{ventaBean.venta.fecha}"><f:convertDateTime pattern="dd/MM/yyyy" /></h:outputText>
 			<h:outputText value="Pagado"/><h:outputText value="#{ventaBean.venta.totalPagado}"/>
-	     	<h:outputText value="Cliente: "/><h:outputText value="#{ventaBean.venta.cliente.apellido}, #{ventaBean.venta.cliente.nombres}"/>
+	     	<h:outputText value="Forma de pago: "/><h:outputText value="#{ventaBean.venta.formaDePago}"/>
 			<h:outputText value="Saldo"/>
                 		<h:outputText style="background-color:red;color:white;font-weight: bold;" value="#{ventaBean.venta.saldo}" rendered="#{ventaBean.venta.saldo gt 0}"/>
                 		<h:outputText value="#{ventaBean.venta.saldo}" rendered="#{not (ventaBean.venta.saldo gt 0)}"/>

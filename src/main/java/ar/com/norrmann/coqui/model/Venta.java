@@ -74,9 +74,6 @@ public class Venta {
     }
     
     public BigDecimal getSaldo() {
-    	if (formaDePago.equals(FormaDePago.Contado)){
-    		return new BigDecimal(0);
-    	}
         return getPrecioTotal().subtract(getTotalPagado());
     }
 }
