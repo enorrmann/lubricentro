@@ -22,6 +22,7 @@ import org.springframework.roo.addon.jsf.managedbean.RooJsfManagedBean;
 import org.springframework.roo.addon.serializable.RooSerializable;
 
 import ar.com.norrmann.coqui.jsf.converter.VentaConverter;
+import ar.com.norrmann.coqui.jsf.util.GenericFilter;
 import ar.com.norrmann.coqui.model.Pago;
 import ar.com.norrmann.coqui.model.Venta;
 
@@ -31,6 +32,10 @@ public class PagoBean {
 	
 	@ManagedProperty("#{ventaBean}")
 	private VentaBean ventaBean;
+	private GenericFilter filtroPagos = new GenericFilter();
+	private BigDecimal ingresos = new BigDecimal(0);
+	private BigDecimal egresos  = new BigDecimal(0);
+	private BigDecimal saldo = new BigDecimal(0);
 	
 	 public HtmlPanelGrid populateCreatePanel() {
 	        FacesContext facesContext = FacesContext.getCurrentInstance();
@@ -99,6 +104,7 @@ public class PagoBean {
 	 public String displayCreateDialog() {
 		 Venta venta = ventaBean.getVenta();
 		 Pago pago = new Pago();
+		 pago.setTipodePago(TipoDePago.Ingreso);
 		 if (venta != null ){
 			 pago.setImporte(venta.getSaldo());
 		 }
@@ -142,14 +148,81 @@ public class PagoBean {
 	        FacesMessage facesMessage = new FacesMessage(message);
 	        FacesContext.getCurrentInstance().addMessage(null, facesMessage);
 	        reset();
+	        if (ventaBean.getVenta()==null){
+	        	return findPagosDeHoy();
+	        } else {
+	        	return null;
+	        }
+	    }
+	 
+	    public String findPagosDeHoy() {
+	    	setCreateDialogVisible(false);
+	        setAllPagoes(Pago.findPagoesByFechaEquals(filtroPagos.getFechaDesde()).getResultList());
+	        setDataVisible(!getAllPagoes().isEmpty());
+	        calcularSaldo();
+	        return "pago";
+	    }
+	    
+	    public String delete() {
+	        getPago().remove();
+	        FacesMessage facesMessage = new FacesMessage("Correctamente borrado");
+	        FacesContext.getCurrentInstance().addMessage(null, facesMessage);
+	        reset();
+	        findPagosDeHoy();
 	        return null;
 	    }
-
+	    
+	    private void calcularSaldo(){
+	    	this.saldo = new BigDecimal(0);
+	    	this.ingresos = new BigDecimal(0);
+	    	this.egresos = new BigDecimal(0);
+	    	for (Pago unPago:getAllPagoes()){
+	    		if (unPago.getTipodePago().equals(TipoDePago.Ingreso)){
+	    			ingresos = ingresos.add(unPago.getImporte());
+	    			saldo = saldo.add(unPago.getImporte());
+	    		} else {
+	    			egresos = egresos.add(unPago.getImporte());
+	    			saldo = saldo.subtract(unPago.getImporte());
+	    		}
+	    	}
+	    }
 	public VentaBean getVentaBean() {
 		return ventaBean;
 	}
 
 	public void setVentaBean(VentaBean ventaBean) {
 		this.ventaBean = ventaBean;
+	}
+
+	public BigDecimal getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(BigDecimal saldo) {
+		this.saldo = saldo;
+	}
+
+	public GenericFilter getFiltroPagos() {
+		return filtroPagos;
+	}
+
+	public void setFiltroPagos(GenericFilter filtroPagos) {
+		this.filtroPagos = filtroPagos;
+	}
+
+	public BigDecimal getIngresos() {
+		return ingresos;
+	}
+
+	public void setIngresos(BigDecimal ingresos) {
+		this.ingresos = ingresos;
+	}
+
+	public BigDecimal getEgresos() {
+		return egresos;
+	}
+
+	public void setEgresos(BigDecimal egresos) {
+		this.egresos = egresos;
 	}
 }

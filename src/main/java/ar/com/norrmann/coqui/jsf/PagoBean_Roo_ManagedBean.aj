@@ -16,7 +16,6 @@ import javax.annotation.PostConstruct;
 import javax.el.ELContext;
 import javax.el.ExpressionFactory;
 import javax.faces.application.Application;
-import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.component.html.HtmlOutputText;
@@ -336,14 +335,6 @@ privileged aspect PagoBean_Roo_ManagedBean {
         createDialogVisible = false;
         findAllPagoes();
         return "pago";
-    }
-    
-    public String PagoBean.delete() {
-        pago.remove();
-        FacesMessage facesMessage = new FacesMessage("Successfully deleted");
-        FacesContext.getCurrentInstance().addMessage(null, facesMessage);
-        reset();
-        return findAllPagoes();
     }
     
     public void PagoBean.reset() {

@@ -22,8 +22,7 @@
 					value="#{clienteBean.allClientes}"
 					var="cliente"
 					rendered="#{clienteBean.dataVisible}"
-					resizableColumns="false" paginator="true" rows="10"
-					paginatorPosition="bottom">
+					resizableColumns="false" paginator="true" rows="10" paginatorPosition="bottom">
                 <f:facet name="header">
 				<p:commandButton icon="ui-icon-print" title="Imprimir" value="Imprimir" ajax="false" >
 					<p:dataExporter type="pdf" target="list" fileName="Clientes" excludeColumns="5"/>

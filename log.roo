@@ -352,3 +352,6 @@ web jsf all --package ar.com.norrmann.coqui.jsf
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-03-11 13:53:25
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-03-11 14:40:03
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-03-11 14:41:12
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-03-12 10:48:46
+finder list --class ~.model.Pago
+finder add --finderName findPagoesByFechaEquals

@@ -203,8 +203,8 @@ public class ApplicationBean {
 
         item = new MenuItem();
         item.setId("listPagoMenuItem");
-        item.setValueExpression("value", expressionFactory.createValueExpression(elContext, "Listar pagos", String.class));
-        item.setActionExpression(expressionFactory.createMethodExpression(elContext, "#{pagoBean.displayList}", String.class, new Class[0]));
+        item.setValueExpression("value", expressionFactory.createValueExpression(elContext, "Listar movimientos", String.class));
+        item.setActionExpression(expressionFactory.createMethodExpression(elContext, "#{pagoBean.findPagosDeHoy}", String.class, new Class[0]));
         item.setIcon("ui-icon ui-icon-folder-open");
         item.setAjax(false);
         item.setAsync(false);
