@@ -357,3 +357,4 @@ finder list --class ~.model.Pago
 finder add --finderName findPagoesByFechaEquals
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-03-12 12:25:01
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2015-03-12 13:04:26
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2015-03-12 15:23:08
